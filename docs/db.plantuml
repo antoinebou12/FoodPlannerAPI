@@ -1,0 +1,99 @@
+# http://www.plantuml.com/plantuml/duml/dLLDZzGm3BttLrXp1EqAxcYqI6Z5ICk0MEueqtYwXZGfYRjYLF7VMQTC6eyeAt6gFvxjv-H5lKbi8e-zQvhMcPJWCxOq84mDmCkFXs_Oyix2LxBYttCatm4JEwnyYwcDD305Bz4xIlncvxk8bj3p5gZOgSedZcChDG8eJaRiHuuatiuV0_ZQAmtcsLjWq-MQdMViCC8GSVX2FTQnDeJlbx64yP7yK-sly-OBPPYgxRoP2szTC0m_HkEP-5G1HazSTocxmAG6CWxxiJzWN3cwqaAlFot3M-D294nBP8Y1aVmIE1gkyV4G7aus6gwBZYGaYfl6pjHki3Js2vlR4Eow7Ce15RSrZ5s8f-SkiWpuWCPzSiR_VSXTQ8rxPnWXArKi7KPlIr248UssqADnIS-0IHMA8C3Enb8zotyBCN-LEXxHSuYdj_m-z2iF9BUG0zinzbiu_h6gDkVaN2zUHZqlCBtppu6YaQCKT-b-_n26uQb4UFo3OGsRcP9cgG3_oLRGmZY_12U64hbAr-yjSOYurveob5nUSxuUsBpUmDKLR5vTNx_OL0ztBL-Uf0RaZz9e8xJMiqMgUe24S-uYFWzhBgIZGKKHpTcenqkiKRUgYoylIc7Ncwq3ofqqpGrwAp-6tm00
+
+@startuml
+
+class Recipe {
+  +ObjectId _id
+  +String title
+  +String description
+  +List<Ingredient> ingredients
+  +List<Instruction> instructions
+  +NutritionInfo nutritionInfo
+  +List<String> tags
+  +Integer prepTime
+  +Integer cookTime
+  +Integer servings
+}
+
+class Ingredient {
+  +String name
+  +Float quantity
+  +String unit
+}
+
+class Instruction {
+  +Integer stepNumber
+  +String description
+}
+
+class NutritionInfo {
+  +Float calories
+  +Float protein
+  +Float fat
+  +Float carbohydrates
+  +Float fiber
+  +Float sugar
+  +Float sodium
+}
+
+class Food {
+  +ObjectId _id
+  +String name
+  +String category
+  +NutritionInfo nutritionInfo
+}
+
+class MealPlan {
+  +ObjectId _id
+  +LocalDate startDate
+  +LocalDate endDate
+  +List<Meal> meals
+}
+
+class Meal {
+  +LocalDateTime dateTime
+  +List<Recipe> recipes
+}
+
+class InventoryAtHome {
+  +ObjectId _id
+  +List<FoodItem> foodItems
+}
+
+class FoodItem {
+  +Food food
+  +Float quantity
+  +String unit
+  +LocalDate expirationDate
+}
+
+class ShoppingList {
+  +ObjectId _id
+  +List<ShoppingListItem> items
+}
+
+class ShoppingListItem {
+  +Food food
+  +Float quantity
+  +String unit
+  +FoodLocation location
+}
+
+class FoodLocation {
+  +String storeName
+  +String aisle
+}
+
+Recipe "1" -- "0..*" Ingredient
+Recipe "1" -- "0..*" Instruction
+Recipe "1" -- "1" NutritionInfo
+Food "1" -- "1" NutritionInfo
+MealPlan "1" -- "0..*" Meal
+Meal "1" -- "0..*" Recipe
+InventoryAtHome "1" -- "0..*" FoodItem
+FoodItem "1" -- "1" Food
+ShoppingList "1" -- "0..*" ShoppingListItem
+ShoppingListItem "1" -- "1" Food
+ShoppingListItem "1" -- "1" FoodLocation
+
+@enduml
