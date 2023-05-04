@@ -1,6 +1,6 @@
-# Food Planner API
+# Recipe and Food Planner API
 
-This is a Recipe and Food Planner application built using FastAPI and MongoDB. The application helps users manage recipes, meal plans, inventory at home, and shopping lists based on nutrient information.
+This is a Recipe and Food Planner application built using Blazor WebAssembly, C#, and MongoDB. The application helps users manage recipes, meal plans, inventory at home, and shopping lists based on nutrient information.
 
 ## Features
 
@@ -10,7 +10,13 @@ This is a Recipe and Food Planner application built using FastAPI and MongoDB. T
 - Manage inventory at home, including food items and their quantities.
 - Create, view, update, and delete shopping lists with food items and their locations.
 
-## Installation
+## Prerequisites
+
+- [.NET 6 SDK](https://dotnet.microsoft.com/download/dotnet/6.0)
+- [Visual Studio 2022](https://visualstudio.microsoft.com/vs/) (optional, but recommended)
+- A running instance of MongoDB. Update the `RecipeFoodPlanner.Server/appsettings.json` file with your MongoDB connection settings.
+
+## Getting Started
 
 1. Clone this repository:
 
@@ -18,42 +24,35 @@ This is a Recipe and Food Planner application built using FastAPI and MongoDB. T
 git clone https://github.com/yourusername/recipe_food_planner.git
 ```
 
-2. Create a virtual environment and activate it:
+2. Open the `RecipeFoodPlanner.sln` solution file in Visual Studio 2022 or your preferred IDE.
+
+3. Set the `RecipeFoodPlanner.Server` project as the startup project.
+
+4. Run the server-side application using the "Start" button in Visual Studio or by running the following command in the terminal:
 
 ```bash
-python3 -m venv venv
-source venv/bin/activate
+dotnet run --project RecipeFoodPlanner.Server
 ```
 
-3. Install the required dependencies:
+5. Open a new terminal and navigate to the `RecipeFoodPlanner.Client` project directory. Start the client-side Blazor WebAssembly application using the following command:
 
 ```bash
-pip install -r requirements.txt
+dotnet run
 ```
 
-4. Make sure you have a running instance of MongoDB. Update the `config/settings.py` file with your MongoDB connection settings.
+6. The application will be available at http://localhost:5000. You can browse the recipes, foods, meal plans, inventory, and shopping lists using the navigation menu.
 
-## Running the Application
+## Project Structure
 
-To start the FastAPI application, run the following command:
+- `RecipeFoodPlanner.Client`: Client-side Blazor WebAssembly project, containing Razor components for the user interface and services for API communication.
+- `RecipeFoodPlanner.Server`: Server-side ASP.NET Core project, providing the API for the client-side Blazor application.
+- `RecipeFoodPlanner.Server/Controllers`: API controllers for recipes, foods, meal plans, inventory, and shopping lists.
+- `RecipeFoodPlanner.Server/Data`: Data context and repository classes for MongoDB.
+- `RecipeFoodPlanner.Server/Models`: Data models for recipes, foods, meal plans, inventory, and shopping lists.
 
-```bash
-uvicorn app.main:app --reload
-```
+## Contributing
 
-The application will be available at http://127.0.0.1:8000/. You can access the interactive API documentation at http://127.0.0.1:8000/docs.
-
-## API Endpoints
-
-The application provides the following API endpoints:
-
-- `POST /recipes`: Create a new recipe
-- `GET /recipes`: Retrieve all recipes
-- `GET /recipes/{recipe_id}`: Retrieve a specific recipe by ID
-- `PUT /recipes/{recipe_id}`: Update a specific recipe by ID
-- `DELETE /recipes/{recipe_id}`: Delete a specific recipe by ID
-
-... (similar endpoints for foods, meal plans, inventory, and shopping lists)
+Please feel free to submit issues, fork the repository and send pull requests!
 
 ## License
 
