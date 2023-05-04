@@ -1,6 +1,5 @@
-# http://www.plantuml.com/plantuml/duml/dLLDZzGm3BttLrXp1EqAxcYqI6Z5ICk0MEueqtYwXZGfYRjYLF7VMQTC6eyeAt6gFvxjv-H5lKbi8e-zQvhMcPJWCxOq84mDmCkFXs_Oyix2LxBYttCatm4JEwnyYwcDD305Bz4xIlncvxk8bj3p5gZOgSedZcChDG8eJaRiHuuatiuV0_ZQAmtcsLjWq-MQdMViCC8GSVX2FTQnDeJlbx64yP7yK-sly-OBPPYgxRoP2szTC0m_HkEP-5G1HazSTocxmAG6CWxxiJzWN3cwqaAlFot3M-D294nBP8Y1aVmIE1gkyV4G7aus6gwBZYGaYfl6pjHki3Js2vlR4Eow7Ce15RSrZ5s8f-SkiWpuWCPzSiR_VSXTQ8rxPnWXArKi7KPlIr248UssqADnIS-0IHMA8C3Enb8zotyBCN-LEXxHSuYdj_m-z2iF9BUG0zinzbiu_h6gDkVaN2zUHZqlCBtppu6YaQCKT-b-_n26uQb4UFo3OGsRcP9cgG3_oLRGmZY_12U64hbAr-yjSOYurveob5nUSxuUsBpUmDKLR5vTNx_OL0ztBL-Uf0RaZz9e8xJMiqMgUe24S-uYFWzhBgIZGKKHpTcenqkiKRUgYoylIc7Ncwq3ofqqpGrwAp-6tm00
-
 @startuml
+!theme blueprint
 
 class Recipe {
   +ObjectId _id
@@ -82,6 +81,15 @@ class ShoppingListItem {
 class FoodLocation {
   +String storeName
   +String aisle
+  +String website
+  +String physicalAddress
+}
+
+class Bill {
+  +ObjectId _id
+  +DateTime date
+  +Double totalAmount
+  +ObjectId shoppingListId
 }
 
 Recipe "1" -- "0..*" Ingredient
@@ -95,5 +103,5 @@ FoodItem "1" -- "1" Food
 ShoppingList "1" -- "0..*" ShoppingListItem
 ShoppingListItem "1" -- "1" Food
 ShoppingListItem "1" -- "1" FoodLocation
-
+ShoppingList "1" -- "0..1" Bill
 @enduml
