@@ -1,0 +1,41 @@
+@startuml
+
+actor User
+
+package "FoodPlanner.Client" {
+  [RecipeList.razor]
+  [RecipeDetail.razor]
+  [FoodList.razor]
+  [FoodDetail.razor]
+  [MealPlanList.razor]
+  [MealPlanDetail.razor]
+  [InventoryList.razor]
+  [InventoryDetail.razor]
+  [ShoppingListList.razor]
+  [ShoppingListDetail.razor]
+}
+
+
+User -- [FoodPlanner.Client]
+[FoodPlanner.Client] -- [RecipeList.razor]
+[FoodPlanner.Client] -- [RecipeDetail.razor]
+[FoodPlanner.Client] -- [FoodList.razor]
+[FoodPlanner.Client] -- [FoodDetail.razor]
+[FoodPlanner.Client] -- [MealPlanList.razor]
+[FoodPlanner.Client] -- [MealPlanDetail.razor]
+[FoodPlanner.Client] -- [InventoryList.razor]
+[FoodPlanner.Client] -- [InventoryDetail.razor]
+[FoodPlanner.Client] -- [ShoppingListList.razor]
+[FoodPlanner.Client] -- [ShoppingListDetail.razor]
+
+[FoodPlanner.Client] -down-> "FoodPlanner.Server"
+
+package "FoodPlanner.Server" {
+  [RecipesController]
+  [FoodsController]
+  [MealPlansController]
+  [InventoryController]
+  [ShoppingListsController]
+}
+
+@enduml
