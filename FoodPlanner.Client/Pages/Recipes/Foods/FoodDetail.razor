@@ -1,0 +1,10 @@
+@page "/foods/{FoodId:int}"
+
+<h1>Food Detail</h1>
+
+<p>This page will show the details for food with ID @FoodId.</p>
+
+@code {
+    [Parameter]
+    public int FoodId { get; set; }
+}
