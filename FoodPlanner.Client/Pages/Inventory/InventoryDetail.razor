@@ -1,0 +1,10 @@
+@page "/inventory/{InventoryItemId:int}"
+
+<h1>Inventory Item Detail</h1>
+
+<p>This page will show the details for inventory item with ID @InventoryItemId.</p>
+
+@code {
+    [Parameter]
+    public int InventoryItemId { get; set; }
+}
