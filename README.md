@@ -2,6 +2,8 @@
 
 This is a Recipe and Food Planner application built using Blazor WebAssembly, C#, and MongoDB. The application helps users manage recipes, meal plans, inventory at home, and shopping lists based on nutrient information.
 
+![DB](http://www.plantuml.com/plantuml/dpng/dLDDZzCm4BtdLmmzWdO5TrGj4bfHQIc8vOxSU9eEEBQnnokgYlzE9w6E7H4gxIdpyTxCi_ro5ra5JhrfNl01UuITIUW3MMwQrgWOuGksv15E3S2hJxllsF96mpVIaZ_o6Ta14niiSesn3UIPd9Ng0qL-kx5TG4reUGsKurZq8uVK2aS0EHaGsyI19DlOlGDRPdd0k7iDhBg1ix6C7GRm0VrNwh6ijSxzcDSYXYUoP-xloyadoN0gJcVLIBmtJZ7yJCeoyR4094jSJibdWLEraD5lKx_3i71rUKHz_DEql5N61S8uLNnmZ6IdmbvnYGyxTpZgeBWaxKb4v3IcJfMfqvJwISszSthP3lc2Sjegniw5uxM7p0i-eZAVZRB_NlBWMcNUAqOOh2jHNKQhSr6C8UFMqACoiTu1fueeXW0z1XDxjFyQml2jtF64bbqulkCFhiS5iJ92Bcp3sAzX_pSgnboQ8r-o0NNTOFMPVtaAIgvIqcdwuy5vVwQ8ZlyeB66ZKgfLbe3dgXMqA1QLO2IeJ5wsg_yjiWkuhJsbA1eKxlWyi7gpWfiRMBs-lNsvAdxSfNx-9MS0-LGURKJMSZTRjLuWvQ4tgu_BcfbrQb1sH7C9olLIQwfNhSdpXwgmLuVD0UMRD7TeTUhD7m00)
+
 ## Features
 
 - Create, view, update, and delete recipes with detailed instructions and nutritional information.
