@@ -7,6 +7,6 @@ RUN dotnet restore
 COPY . ./
 RUN dotnet publish -c Release -o out
 
-FROM nginx:alpine
-COPY --from=build-env /app/out/wwwroot /usr/share/nginx/html
-COPY nginx.conf /etc/nginx/nginx.conf
+FROM caddy:2-alpine
+COPY --from=build-env /app/out/wwwroot /usr/share/caddy
+COPY Caddyfile /etc/caddy/Caddyfile
