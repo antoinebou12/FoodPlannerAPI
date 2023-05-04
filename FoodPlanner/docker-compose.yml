@@ -1,0 +1,15 @@
+version: '3.8'
+
+services:
+  server:
+    build:
+      context: ./RecipeFoodPlanner.Server
+      dockerfile: Dockerfile
+    ports:
+      - "5000:80"
+  client:
+    build:
+      context: ./RecipeFoodPlanner.Client
+      dockerfile: Dockerfile
+    ports:
+      - "5001:80"
