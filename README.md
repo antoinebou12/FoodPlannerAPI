@@ -1,8 +1,8 @@
 # Food Planner
 
-- ![C#](https://img.shields.io/badge/C%23-239120?logo=c-sharp&logoColor=white)
-- ![.NET](https://img.shields.io/badge/.NET-5C2D91?logo=.net&logoColor=white)
-- ![Blazor](https://img.shields.io/badge/Blazor-512BD4?logo=blazor&logoColor=white)
+![C#](https://img.shields.io/badge/C%23-239120?logo=c-sharp&logoColor=white)
+![.NET](https://img.shields.io/badge/.NET-5C2D91?logo=.net&logoColor=white)
+![Blazor](https://img.shields.io/badge/Blazor-512BD4?logo=blazor&logoColor=white)
 
 This is a Recipe and Food Planner application built using Blazor WebAssembly, C#. The application helps users manage recipes, meal plans, inventory at home, and shopping lists based on nutrient information.
 
