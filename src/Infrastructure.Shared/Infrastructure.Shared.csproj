@@ -12,6 +12,6 @@
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="MailKit" Version="3.1.0" />
-    <PackageReference Include="MimeKit" Version="3.1.0" />
+    <PackageReference Include="MimeKit" Version="3.6.1" />
   </ItemGroup>
 </Project>
