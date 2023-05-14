@@ -6,7 +6,7 @@ WORKDIR /app
 EXPOSE 5005
 EXPOSE 5006
 
-FROM mcr.microsoft.com/dotnet/sdk:6.0 AS build-env
+FROM mcr.microsoft.com/dotnet/sdk:7.0 AS build-env
 WORKDIR /
 COPY ["src/Server/Server.csproj", "src/Server/"]
 COPY ["src/Application/Application.csproj", "src/Application/"]
