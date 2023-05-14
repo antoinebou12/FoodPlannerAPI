@@ -27,7 +27,7 @@ This is a Recipe and Food Planner application built using Blazor WebAssembly, C#
 1. Clone this repository:
 
 ```bash
-git clone https://github.com/yourusername/recipe_food_planner.git
+https://github.com/antoinebou12/FoodPlannerAPI
 ```
 
 2. Open the `RecipeFoodPlanner.sln` solution file in Visual Studio 2022 or your preferred IDE.
