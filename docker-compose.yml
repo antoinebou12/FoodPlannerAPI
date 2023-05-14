@@ -1,12 +1,12 @@
 version: '3.8'
 
 services:
-  blazorhero:
+  foodplanner:
     build:
       context: .
       dockerfile: src/Server/Dockerfile
     environment:
-      - "ConnectionStrings__DefaultConnection=Server=db;Database=BlazorHero;User=sa;Password=Your_password123;MultipleActiveResultSets=true"
+      - "ConnectionStrings__DefaultConnection=Server=db;Database=FoodPlanner;User=sa;Password=Your_password123;MultipleActiveResultSets=true;TrustServerCertificate=true;MultiSubnetFailover=True;Encrypt=false"
       - "ASPNETCORE_Kestrel__Certificates__Default__Password=securePassword123"
       - "ASPNETCORE_Kestrel__Certificates__Default__Path=/https/aspnetapp.pfx"
     volumes:
@@ -17,7 +17,7 @@ services:
     depends_on:
       - db
     restart: on-failure
-    container_name: blazorhero
+    container_name: foodplanner
 
   db:
     image: "mcr.microsoft.com/mssql/server"

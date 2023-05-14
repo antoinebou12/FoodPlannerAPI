@@ -6,7 +6,7 @@ WORKDIR /app
 EXPOSE 5005
 EXPOSE 5006
 
-FROM mcr.microsoft.com/dotnet/sdk:7.0 AS build-env
+FROM mcr.microsoft.com/dotnet/sdk:7.0 AS build
 WORKDIR /
 COPY ["src/Server/Server.csproj", "src/Server/"]
 COPY ["src/Application/Application.csproj", "src/Application/"]
@@ -16,6 +16,7 @@ COPY ["src/Infrastructure.Shared/Infrastructure.Shared.csproj", "src/Infrastruct
 COPY ["src/Infrastructure/Infrastructure.csproj", "src/Infrastructure/"]
 COPY ["src/Client/Client.csproj", "src/Client/"]
 COPY ["src/Client.Infrastructure/Client.Infrastructure.csproj", "src/Client.Infrastructure/"]
+RUN dotnet dev-certs https --clean && dotnet dev-certs https --trust
 RUN dotnet restore "src/Server/Server.csproj" --disable-parallel
 COPY . .
 WORKDIR "src/Server"

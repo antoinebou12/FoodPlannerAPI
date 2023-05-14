@@ -4,4 +4,6 @@
 wget https://dot.net/v1/dotnet-install.sh -O dotnet-install.sh
 sudo chmod +x ./dotnet-install.sh
 ./dotnet-install.sh --version latest
-# ./dotnet-install.sh --channel 7.0
+./dotnet-install.sh --version 7.0.203
+./dotnet-install.sh --version 7.0.203 --runtime dotnet
+./dotnet-install.sh --version 7.0.203 --runtime aspnetcore
