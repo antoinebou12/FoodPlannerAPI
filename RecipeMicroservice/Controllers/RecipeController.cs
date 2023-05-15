@@ -28,7 +28,7 @@ public class RecipeController : ControllerBase
         return await _context.Recipes.ToListAsync();
     }
 
-[HttpGet("{id}")]
+    [HttpGet("{id}")]
     public async Task<ActionResult<Recipe>> GetById(string id)
     {
         var recipe = await _context.Recipes.FindAsync(id);

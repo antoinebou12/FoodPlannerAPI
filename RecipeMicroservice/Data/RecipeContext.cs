@@ -4,8 +4,11 @@ using System.Collections.Generic;
 public class RecipeContext : DbContext
 {
     public RecipeContext(DbContextOptions<RecipeContext> options)
-        : base(options)
+        : base(options) {}
+
+    protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
     {
+        optionsBuilder.UseSqlServer(@"Server=(localdb)\mssqllocaldb;Database=FoodPlannerDb;Trusted_Connection=True;");
     }
 
     public DbSet<Recipe> Recipes { get; set; }
