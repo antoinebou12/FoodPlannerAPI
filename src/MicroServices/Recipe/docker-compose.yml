@@ -15,6 +15,8 @@ services:
     environment:
       - ConnectionStrings__DefaultConnection=Server=db;Database=recipedb;User=sa;Password=Your_password123;
       - ASPNETCORE_ENVIRONMENT=Development
+    volumes:
+      - ./Data:/app/Data
     healthcheck:
       test: ["CMD", "curl", "--fail", "http://localhost:80/health" ]
       interval: 30s
@@ -141,8 +143,8 @@ services:
     image: ghcr.io/ajnart/homarr:latest
     restart: unless-stopped
     volumes:
-      - ./homarr/configs:/app/data/configs
-      - ./homarr/icons:/app/public/icons
+      - ./Monitoring/homarr/configs:/app/data/configs
+      - ./Monitoring/homarr/icons:/app/public/icons
     ports:
       - '7575:7575'
 
