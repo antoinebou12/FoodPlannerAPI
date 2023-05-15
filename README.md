@@ -79,8 +79,52 @@ dotnet run
 - `APIGateway`: This is the entry point for all client requests. It forwards requests to appropriate microservices.
 - `Tests`: Contains unit tests for each microservice.
 
-# Monitoring and Stats
-This application uses Application Insights for monitoring and Prometheus + Grafana for dashboard stats. Health checks are built-in for each microservice and Docker stats can be used for monitoring resource usage.
+
+## Services and Port Setup
+Here's a brief overview of the services and their port configurations:
+
+- recipemicroservice: The main application. Exposed on ports 5000 (HTTP), 5001 (HTTPS), 1234, and 4317.
+- db: MySQL database service. No ports are exposed to the host machine, but it is accessible to other services on the default MySQL port (3306).
+- redis: Redis service. Exposed on port 6379.
+- prometheus: Monitoring service. Exposed on port 9090.
+- grafana: Dashboard statistics service. Exposed on port 3000.
+- jaeger: Distributed tracing service. Exposed on multiple ports including 16686, 6831, 6832, 5778, 4317, 4318, 14250, 14268, 14269, and 9411.
+- zookeeper: Zookeeper service. Exposed on port 2181.
+- kafka: Kafka service. Exposed on port 9092.
+
+## Monitoring and Statistics
+
+This application employs Application Insights for robust monitoring, complemented by Prometheus and Grafana for insightful dashboard statistics. Each microservice comes with built-in health checks, and Docker stats are available for comprehensive resource usage monitoring.
+
+### Metrics Overview
+
+A variety of metrics are collected to provide a comprehensive view of the system's performance and health:
+
+- **prometheus_net_eventcounteradapter_sources_connected_total**: Represents the total number of event sources currently connected to the adapter.
+
+- **microsoft_aspnetcore_hosting_requests_per_second_total**: Measures the total rate of requests per second coming into the ASP.NET Core application.
+
+- **system_runtime_gc_fragmentation**: Indicates the percentage of fragmentation in the .NET runtime's Garbage Collector (GC).
+
+- **system_net_security_tls12_sessions_open**: The count of active TLS 1.2 sessions.
+
+- **system_runtime_threadpool_completed_items_count_total**: The total number of work items completed by the thread pool.
+
+- **system_net_security_total_tls_handshakes**: The total count of completed TLS handshakes.
+
+- **process_virtual_memory_bytes**: The total virtual memory used by the process, represented in bytes.
+
+- **system_net_sockets_outgoing_connections_established**: The total number of outgoing connections established by sockets.
+
+- **system_net_http_requests_started_total**: The total number of HTTP requests initiated.
+
+- **dotnet_total_memory_bytes**: The total known allocated memory of your .NET application.
+
+- **system_runtime_methods_jitted_count**: The count of methods that have been JIT compiled.
+
+- **system_net_sockets_bytes_received**: The total number of bytes received by sockets.
+
+
 
 ## Contributing
 

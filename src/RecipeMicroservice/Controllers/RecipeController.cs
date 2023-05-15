@@ -1,12 +1,19 @@
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.Caching.Distributed;
 namespace RecipeMicroservice.Controllers;
 
 [ApiController]
-[Route("[controller]")] // /recipe
+[Route("[controller]")]
 public class RecipeController : ControllerBase
 {
     private readonly RecipeContext _context;
+    private readonly IDistributedCache _cache;
+
+    public RecipeController(IDistributedCache cache)
+    {
+        _cache = cache;
+    }
 
     public RecipeController(RecipeContext context)
     {

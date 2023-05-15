@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 using Microsoft.EntityFrameworkCore;
+using Pomelo.EntityFrameworkCore.MySql;
 
 
 public class Recipe
@@ -50,11 +51,11 @@ public class NutritionInfo
     public float Sodium { get; set; }
 }
 
-// public class Tag
-// {
-//     [Key]
-//     public Guid Id { get; set; }
-//     public string Name { get; set; }
-// }
+public class Tag
+{
+    [Key]
+    public Guid Id { get; set; }
+    public string Name { get; set; }
+}
 
 

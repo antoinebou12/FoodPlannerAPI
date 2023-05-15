@@ -3,6 +3,14 @@ using Microsoft.OpenApi.Models;
 using Pomelo.EntityFrameworkCore.MySql;
 using System;
 using Prometheus;
+using App.Metrics;
+using App.Metrics.AspNetCore;
+using Microsoft.Extensions.Caching.StackExchangeRedis;
+using OpenTelemetry;
+using OpenTelemetry.Resources;
+using OpenTelemetry.Trace;
+using OpenTelemetry.Exporter;
+using OpenTelemetry.Instrumentation;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -12,13 +20,36 @@ builder.Services.AddDbContext<RecipeContext>(options =>
     new MySqlServerVersion(new Version(8, 0, 21))));
 
 builder.Services.AddControllers();
+
 builder.Services.AddHealthChecks();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddApplicationInsightsTelemetry();
 builder.Services.AddMetrics();
 
-using var server = new Prometheus.KestrelMetricServer(port: 1234);
+Sdk.CreateTracerProviderBuilder()
+    .AddSource("RecipeMicroservice")
+    .AddAspNetCoreInstrumentation()
+    .AddHttpClientInstrumentation()
+    .AddJaegerExporter(o =>
+    {
+        o.AgentHost = "localhost";
+        o.AgentPort = 6831;
+    })
+    .SetResourceBuilder(ResourceBuilder.CreateDefault().AddService("RecipeMicroservice"))
+    .Build();
+
+
+using var server = new MetricServer(port: 1234);
 server.Start();
+
+// Add Redis
+builder.Services.AddStackExchangeRedisCache(options =>
+{
+    options.Configuration = "localhost"; // Replace with your Redis connection string
+    options.InstanceName = "RecipeMicroservice_";
+});
+
+builder.Services.AddDistributedMemoryCache();
 
 // Configure Swagger
 builder.Services.AddSwaggerGen(options =>
@@ -64,7 +95,7 @@ app.UseAuthorization();
 app.MapControllers();
 app.MapHealthChecks("/health");
 
-app.UseMetrics();
+// app.UseMetrics();
 
 Console.WriteLine("Open http://localhost:1234/metrics in a web browser.");
 Console.WriteLine("Press enter to exit.");

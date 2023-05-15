@@ -1,6 +1,7 @@
 using Microsoft.EntityFrameworkCore;
 using System.Collections.Generic;
 
+
 public class RecipeContext : DbContext
 {
     public RecipeContext(DbContextOptions<RecipeContext> options)
@@ -10,7 +11,7 @@ public class RecipeContext : DbContext
     public DbSet<Ingredient> Ingredients { get; set; }
     public DbSet<Instruction> Instructions { get; set; }
     public DbSet<NutritionInfo> NutritionInfos { get; set; }
-    // public DbSet<Tag> Tags { get; set; }
+    public DbSet<Tag> Tags { get; set; }
 
     public static void SeedData(ModelBuilder modelBuilder)
     {
@@ -96,18 +97,18 @@ public class RecipeContext : DbContext
             }
         );
 
-        // modelBuilder.Entity<Tag>().HasData(
-        //     new Tag
-        //     {
-        //         Id = Guid.NewGuid(),
-        //         Name = "Chicken",
-        //     },
-        //     new Tag
-        //     {
-        //         Id = Guid.NewGuid(),
-        //         Name = "Beef",
-        //     }
-        // );
+        modelBuilder.Entity<Tag>().HasData(
+            new Tag
+            {
+                Id = Guid.NewGuid(),
+                Name = "Chicken",
+            },
+            new Tag
+            {
+                Id = Guid.NewGuid(),
+                Name = "Beef",
+            }
+        );
     }
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
@@ -116,7 +117,7 @@ public class RecipeContext : DbContext
         modelBuilder.Entity<Ingredient>().ToTable("Ingredient");
         modelBuilder.Entity<Instruction>().ToTable("Instruction");
         modelBuilder.Entity<NutritionInfo>().ToTable("NutritionInfo");
-        // modelBuilder.Entity<Tag>().ToTable("Tag");
+        modelBuilder.Entity<Tag>().ToTable("Tag");
 
         SeedData(modelBuilder);
     }
