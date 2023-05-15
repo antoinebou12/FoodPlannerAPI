@@ -6,6 +6,9 @@ using System.Text.Json;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Caching.Distributed;
+using Confluent.Kafka;
+using Confluent.Kafka.Serialization;
+
 namespace RecipeMicroservice.Controllers;
 
 
@@ -34,6 +37,22 @@ public class RecipeController : ControllerBase
 
         _context.Recipes.Add(recipe);
         await _context.SaveChangesAsync();
+
+        // Send Kafka message
+        var config = new ProducerConfig { BootstrapServers = "localhost:9092" };  // Configure Kafka server here
+        using (var producer = new ProducerBuilder<Null, string>(config).Build())
+        {
+            try
+            {
+                var message = new Message<Null, string> { Value = JsonSerializer.Serialize(recipe) };
+                await producer.ProduceAsync("recipe-created-topic", message);  // Use your topic name
+                _logger.LogInformation($"Kafka message sent to topic 'recipe-created-topic' with recipe ID {recipe.Id}");
+            }
+            catch (ProduceException<Null, string> e)
+            {
+                _logger.LogError($"Error occured while sending Kafka message: {e.Error.Reason}");
+            }
+        }
 
         return CreatedAtAction(nameof(Get), new { id = recipe.Id }, recipe);
     }

@@ -14,6 +14,31 @@ using OpenTelemetry.Instrumentation;
 
 var builder = WebApplication.CreateBuilder(args);
 
+
+// public static IHostBuilder CreateHostBuilder(string[] args) =>
+//     Host.CreateDefaultBuilder(args)
+//         .ConfigureAppConfiguration((context, config) =>
+//         {
+//             var builtConfig = config.Build();
+
+//             var azureServiceTokenProvider = new AzureServiceTokenProvider();
+//             var keyVaultClient = new KeyVaultClient(
+//                 new KeyVaultClient.AuthenticationCallback(
+//                     azureServiceTokenProvider.KeyVaultTokenCallback));
+
+//             config.AddAzureKeyVault(
+//                 $"https://{builtConfig["KeyVaultName"]}.vault.azure.net/",
+//                 keyVaultClient,
+//                 new DefaultKeyVaultSecretManager());
+//         })
+//         .ConfigureWebHostDefaults(webBuilder =>
+//         {
+//             webBuilder.UseStartup<Startup>();
+//         });
+
+
+
+
 // Add services to the container.
 builder.Services.AddDbContext<RecipeContext>(options =>
     options.UseMySql(builder.Configuration.GetConnectionString("DefaultConnection"),

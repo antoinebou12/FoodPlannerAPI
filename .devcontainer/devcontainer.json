@@ -1,0 +1,9 @@
+{
+    "name": "C# .NET",
+    "dockerFile": "Dockerfile",
+    "appPort": 5000,
+    "extensions": [
+      "ms-dotnettools.csharp"
+    ]
+  }
+  
