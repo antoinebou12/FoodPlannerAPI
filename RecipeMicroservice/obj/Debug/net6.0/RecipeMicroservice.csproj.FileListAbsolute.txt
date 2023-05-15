@@ -1,0 +1,7 @@
+/home/antoine/code/antoine/FoodPlannerAPI/RecipeMicroservice/obj/Debug/net6.0/RecipeMicroservice.csproj.AssemblyReference.cache
+/home/antoine/code/antoine/FoodPlannerAPI/RecipeMicroservice/obj/Debug/net6.0/RecipeMicroservice.GeneratedMSBuildEditorConfig.editorconfig
+/home/antoine/code/antoine/FoodPlannerAPI/RecipeMicroservice/obj/Debug/net6.0/RecipeMicroservice.AssemblyInfoInputs.cache
+/home/antoine/code/antoine/FoodPlannerAPI/RecipeMicroservice/obj/Debug/net6.0/RecipeMicroservice.AssemblyInfo.cs
+/home/antoine/code/antoine/FoodPlannerAPI/RecipeMicroservice/obj/Debug/net6.0/RecipeMicroservice.csproj.CoreCompileInputs.cache
+/home/antoine/code/antoine/FoodPlannerAPI/RecipeMicroservice/obj/Debug/net6.0/RecipeMicroservice.MvcApplicationPartsAssemblyInfo.cs
+/home/antoine/code/antoine/FoodPlannerAPI/RecipeMicroservice/obj/Debug/net6.0/RecipeMicroservice.MvcApplicationPartsAssemblyInfo.cache

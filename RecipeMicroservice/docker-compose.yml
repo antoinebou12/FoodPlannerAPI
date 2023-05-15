@@ -1,0 +1,25 @@
+version: '3.8'
+
+services:
+
+  recipemicroservice:
+    build: .
+    ports:
+      - "5000:80"
+    depends_on:
+      - db
+    environment:
+      - ConnectionStrings__DefaultConnection=Server=db;Database=recipedb;User=sa;Password=Your_password123;
+
+  db:
+    image: mysql:8.0.21
+    environment:
+      - MYSQL_ROOT_PASSWORD=Your_password123
+      - MYSQL_DATABASE=recipedb
+      - MYSQL_USER=sa
+      - MYSQL_PASSWORD=Your_password123
+    volumes:
+      - dbdata:/var/lib/mysql
+
+volumes:
+  dbdata:
