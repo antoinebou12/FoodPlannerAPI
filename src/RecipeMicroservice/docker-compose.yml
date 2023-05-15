@@ -8,7 +8,6 @@ services:
       - "5000:80"
       - "5001:443"
       - "1234:1234"
-      - "4317:4317"
     depends_on:
       - db
       - redis
@@ -112,7 +111,7 @@ services:
       - ALLOW_ANONYMOUS_LOGIN=yes
     container_name: zookeeper
     healthcheck:
-      test: ["CMD", "curl", "--fail", "http://localhost:2181" ]
+      test: ["CMD", "zookeeper-shell", "localhost:2181", "ls", "/"]
       interval: 30s
       timeout: 10s
       retries: 3
@@ -132,11 +131,22 @@ services:
       - zookeeper
     container_name: kafka
     healthcheck:
-      test: ["CMD", "curl", "--fail", "http://localhost:9092" ]
+      test: ["CMD", "kafkacat", "-b", "localhost:9092", "-L"]
       interval: 30s
       timeout: 10s
       retries: 3
 
+  homarr:
+    container_name: homarr
+    image: ghcr.io/ajnart/homarr:latest
+    restart: unless-stopped
+    volumes:
+      - ./homarr/configs:/app/data/configs
+      - ./homarr/icons:/app/public/icons
+    ports:
+      - '7575:7575'
+
 volumes:
   dbdata:
   grafana-storage:
+  homarr-data:
