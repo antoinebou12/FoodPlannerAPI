@@ -124,6 +124,8 @@ A variety of metrics are collected to provide a comprehensive view of the system
 
 - **system_net_sockets_bytes_received**: The total number of bytes received by sockets.
 
+![Metrics](docs/images/grafana.png)
+
 
 
 ## Contributing
