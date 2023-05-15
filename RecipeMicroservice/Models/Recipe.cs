@@ -50,11 +50,11 @@ public class NutritionInfo
     public float Sodium { get; set; }
 }
 
-public class Tag
-{
-    [Key]
-    public Guid Id { get; set; }
-    public string Name { get; set; }
-}
+// public class Tag
+// {
+//     [Key]
+//     public Guid Id { get; set; }
+//     public string Name { get; set; }
+// }
 
 

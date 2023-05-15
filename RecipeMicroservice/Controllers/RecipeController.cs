@@ -3,7 +3,7 @@ using Microsoft.EntityFrameworkCore;
 namespace RecipeMicroservice.Controllers;
 
 [ApiController]
-[Route("[controller]")]
+[Route("[controller]")] // /recipe
 public class RecipeController : ControllerBase
 {
     private readonly RecipeContext _context;

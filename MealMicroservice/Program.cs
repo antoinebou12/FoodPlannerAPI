@@ -6,7 +6,7 @@ using System;
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
-builder.Services.AddDbContext<InventoryContext>(options =>
+builder.Services.AddDbContext<MealContext>(options =>
     options.UseMySql(builder.Configuration.GetConnectionString("DefaultConnection"),
     new MySqlServerVersion(new Version(8, 0, 21))));
 
@@ -19,8 +19,8 @@ builder.Services.AddSwaggerGen(options =>
     options.SwaggerDoc("v1", new OpenApiInfo
     {
         Version = "v1",
-        Title = "Inventory Microservice API",
-        Description = "A Microservice for Managing Inventorys",
+        Title = "Meal Microservice API",
+        Description = "A Microservice for Managing Meals",
         TermsOfService = new Uri("https://github.com/antoinebou12/foodplannerapi/blob/main/LICENSE"),
         Contact = new OpenApiContact
         {
@@ -45,7 +45,7 @@ if (app.Environment.IsDevelopment())
     app.UseSwagger();
     app.UseSwaggerUI(c =>
     {
-        c.SwaggerEndpoint("/swagger/v1/swagger.json", "Inventory Microservice v1");
+        c.SwaggerEndpoint("/swagger/v1/swagger.json", "Meal Microservice v1");
         c.RoutePrefix = string.Empty;
     });
 }

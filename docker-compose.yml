@@ -1,0 +1,45 @@
+version: '3.8'
+
+services:
+
+  recipemicroservice:
+    build: ./recipemicroservice
+    ports:
+      - "5000:80"
+    environment:
+      - ConnectionStrings__DefaultConnection=Server=db;Database=recipedb;User=sa;Password=Your_password123;
+    depends_on:
+      - db
+
+  shoppingmicroservice:
+    build: ./shoppingmicroservice
+    ports:
+      - "5001:80"
+    environment:
+      - ConnectionStrings__DefaultConnection=Server=db;Database=shoppingdb;User=sa;Password=Your_password123;
+    depends_on:
+      - db
+
+  mealplanmicroservice:
+    build: ./mealplanmicroservice
+    ports:
+      - "5002:80"
+    environment:
+      - ConnectionStrings__DefaultConnection=Server=db;Database=mealplandb;User=sa;Password=Your_password123;
+    depends_on:
+      - db
+
+  db:
+    image: mysql:8.0.21
+    environment:
+      - MYSQL_ROOT_PASSWORD=Your_password123
+      - MYSQL_DATABASE=recipedb
+      - MYSQL_DATABASE=shoppingdb
+      - MYSQL_DATABASE=mealplandb
+      - MYSQL_USER=sa
+      - MYSQL_PASSWORD=Your_password123
+    volumes:
+      - dbdata:/var/lib/mysql
+
+volumes:
+  dbdata:
