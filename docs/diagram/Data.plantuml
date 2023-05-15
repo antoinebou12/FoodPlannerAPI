@@ -1,0 +1,117 @@
+@startuml
+!theme blueprint
+
+package "Recipe Microservice" {
+  class Recipe {
+    +ObjectId _id
+    +String title
+    +String description
+    +List<Ingredient> ingredients
+    +List<Instruction> instructions
+    +NutritionInfo nutritionInfo
+    +List<String> tags
+    +Integer prepTime
+    +Integer cookTime
+    +Integer servings
+  }
+
+  class Ingredient {
+    +String name
+    +Float quantity
+    +String unit
+  }
+
+  class Instruction {
+    +Integer stepNumber
+    +String description
+  }
+}
+
+package "Food Microservice" {
+  class Food {
+    +ObjectId _id
+    +String name
+    +String category
+    +NutritionInfo nutritionInfo
+  }
+
+  class NutritionInfo {
+    +Float calories
+    +Float protein
+    +Float fat
+    +Float carbohydrates
+    +Float fiber
+    +Float sugar
+    +Float sodium
+  }
+}
+
+package "Meal Plan Microservice" {
+  class MealPlan {
+    +ObjectId _id
+    +LocalDate startDate
+    +LocalDate endDate
+    +List<Meal> meals
+  }
+
+  class Meal {
+    +LocalDateTime dateTime
+    +List<Recipe> recipes
+  }
+}
+
+package "Inventory Microservice" {
+  class InventoryAtHome {
+    +ObjectId _id
+    +List<FoodItem> foodItems
+  }
+
+  class FoodItem {
+    +Food food
+    +Float quantity
+    +String unit
+    +LocalDate expirationDate
+  }
+}
+
+package "Shopping List Microservice" {
+  class ShoppingList {
+    +ObjectId _id
+    +List<ShoppingListItem> items
+  }
+
+  class ShoppingListItem {
+    +Food food
+    +Float quantity
+    +String unit
+    +FoodLocation location
+  }
+
+  class FoodLocation {
+    +String storeName
+    +String aisle
+    +String website
+    +String physicalAddress
+  }
+  
+  class Bill {
+    +ObjectId _id
+    +DateTime date
+    +Double totalAmount
+    +ObjectId shoppingListId
+  }
+}
+
+Recipe "1" -- "0..*" Ingredient
+Recipe "1" -- "0..*" Instruction
+Recipe "1" -- "1" NutritionInfo
+Food "1" -- "1" NutritionInfo
+MealPlan "1" -- "0..*" Meal
+Meal "1" -- "0..*" Recipe
+InventoryAtHome "1" -- "0..*" FoodItem
+FoodItem "1" -- "1" Food
+ShoppingList "1" -- "0..*" ShoppingListItem
+ShoppingListItem "1" -- "1" Food
+ShoppingListItem "1" -- "1" FoodLocation
+ShoppingList "1" -- "0..1" Bill
+@enduml

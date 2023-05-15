@@ -29,6 +29,15 @@ services:
     depends_on:
       - db
 
+  inventorymicroservice:
+    build: ./inventorymicroservice
+    ports:
+      - "5003:80"
+    environment:
+      - ConnectionStrings__DefaultConnection=Server=db;Database=inventorydb;User=sa;Password=Your_password123;
+    depends_on:
+      - db
+
   db:
     image: mysql:8.0.21
     environment:
@@ -36,6 +45,7 @@ services:
       - MYSQL_DATABASE=recipedb
       - MYSQL_DATABASE=shoppingdb
       - MYSQL_DATABASE=mealplandb
+      - MYSQL_DATABASE=inventorydb
       - MYSQL_USER=sa
       - MYSQL_PASSWORD=Your_password123
     volumes:

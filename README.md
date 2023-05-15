@@ -2,19 +2,37 @@
 
 ![C#](https://img.shields.io/badge/C%23-239120?logo=c-sharp&logoColor=white)
 ![.NET](https://img.shields.io/badge/.NET-5C2D91?logo=.net&logoColor=white)
-![Blazor](https://img.shields.io/badge/Blazor-512BD4?logo=blazor&logoColor=white)
+![ASP.NET](https://img.shields.io/badge/ASP.NET-5C2D91?logo=.net&logoColor=white)
+![Blazor](https://img.shields.io/badge/Blazor-5C2D91?logo=.net&logoColor=white)
 
-This is a Recipe and Food Planner application built using Blazor WebAssembly, C#. The application helps users manage recipes, meal plans, inventory at home, and shopping lists based on nutrient information.
+This is a Recipe and Food Planner application built using .NET 6 and Docker. The application is structured as a collection of microservices and helps users manage recipes, meal plans, home inventory, and shopping lists based on nutrient information.
 
-![DB](http://www.plantuml.com/plantuml/dpng/dLJVRzGm37xlNs7k4RG9tj5fGsZYf34Guntb6b_Fa2OXSGQd4_yxTRjBazFA99vgV_xym-xNNaLMWLDlcXUynnvXQnBwG9QRfZKgHlY2BNc4OmFmwjFsExQyqV2DjFZtF30xO6A3XQynje4yaxE2tbBajnlR1TI4bjT0sOv5F798hUG88JiZuovn8F4sTkV0bbukCFLU0wjkpDbOnWu3-83-A_LOOgrpFywnYE61x93xvxJvF38SY-sicX9lZ5CCFvEoJ7me2CaIbrNoBd2i6ZBwkzHlCIoSBfUerp_EpLjbN22CC-A3OoGx0pl59JzitVwWW-8oQKSoH7PZwbJfEasfdwUvSKuloo4VABkjOknSE3pt8dE3ZwZCPwFiqqrktR3rUyK8etJ5gc6qEeCY32ctXXwLYNKFE5Q98WZGZqREdkI_XZ0-AtKyeELXhsl-u7fS65PAoC4sZFqQTezMKUOKdFB56rdF2wpU-RUdeEIKuixLx_VE-o55vlZ7X2LjcfJgAIl2VquhR9bOfWGZHYNoAbn-Rv5TmBjQKugYAVrVk8t49UBtXqYjCjTQ1up5Ak_8cATFKObW15pQ6WHsFDJfNR9SfSNoA5ewJ6A1rPiLN5p0wlNbvSjLyHjPYkSVH4sGH_tjDtAavMZ-SEe60e-nCtngrfm9kIPbVJOdesmlM5Dfh4u-bqt5NIwsJCWAMUmwMFA6cokqElNcBm00)
+![DB](http://www.plantuml.com/plantuml/dpng/fLHHRnCn37w_Ns7w2De4xwZQ49gej0t4U4TfubxDSicH-0PLjV_El6kF-AfeI3oTy_cpVPzZvoApIJnqldd5M-mGrdx0Fb7WfkcDlJSjmk8hMkeHRiYcc34zaCK5x1i0wqtES70B0F3cy_e7Mbuv-4vkHEuuKMY1YJqgn66sYNgc64RycZA_NuKseICCl0IQxAmOcTDW9Kueq-70kHquaPnNOHCXbASYoVWFIs3J7k9MWR7517t2_Xjrg54Ru_qf-joE81dWiPawybS2x9NYO8u9hdmq33y74vXufqX38DRv2i6md_q0OtyxT6jCrTPAgiVYEgzYTDNB56VjAfKC1LZ3sCQqU_a2b2vDt9UTiSR7H9XBh4-HaK89RGphgBIEsvrBXdNeXgH31P27rcWWEXgwasRTeF7mnPjGxPWmX53lsdMqndyqZ23RncBD7HXS0SjyIjebT6ZyRBZ40VjP0fbCSADHPXbtSmb9lfXFvAt20mQEQLULDp4k-LFiAci-rPFnMJ5sIzWShDdV7md7F786uVxhMkYs_Uuf6PaWEPwekzl6lfTO-RUgmYDBI2_8AwcZJ3gLg4Z_ALLYHAv817ymT3b5qSzDvfZmThwiXhBNo2zSPsADzTjT9clyfNC9yoWHOAhwWRolDqkDv06AmzeZSEIdd5qS0i-2SzasTxpBSO1XyMu1PsUmU7j-_dfHlAyr__HUQe9yzAlJIFlgtccvTG61dtqpV2pMp7P6awOLQ8v6MLwmHasa3fuFb-9MabK9QdQgLPyikUtc0eCREly7)
 
 ## Features
 
-- Create, view, update, and delete recipes with detailed instructions and nutritional information.
-- Create, view, update, and delete foods with nutritional information.
-- Create, view, update, and delete meal plans containing recipes.
-- Manage inventory at home, including food items and their quantities.
-- Create, view, update, and delete shopping lists with food items and their locations.
+- [ ] Create, view, update, and delete recipes with detailed instructions and nutritional information.
+- [ ] Create, view, update, and delete foods with nutritional information.
+- [ ] Create, view, update, and delete meal plans containing recipes.
+- [ ] Manage inventory at home, including food items and their quantities.
+- [ ] Create, view, update, and delete shopping lists with food items and their locations.
+- [ ] Monitor nutritional information for recipes, foods, and meal plans.
+- [ ] Monitor food item quantities in inventory and shopping lists.
+- [ ] Generate shopping lists based on meal plans and inventory.
+- [ ] Generate meal plans based on inventory and shopping lists.
+- [ ] Generate meal plans based on nutritional goals.
+- [ ] Generate shopping lists based on nutritional goals.
+- [ ] Generate meal plans based on food preferences.
+- [ ] Generate shopping lists based on food preferences.
+- [ ] Generate meal plans based on food allergies.
+- [ ] Generate shopping lists based on food allergies.
+
+- Monitoring Microservices
+  - [ ] Logging
+  - [ ] Health Checks
+  - [ ] Metrics
+  - [ ] Tracing
+
 
 ## Prerequisites
 
@@ -28,6 +46,9 @@ This is a Recipe and Food Planner application built using Blazor WebAssembly, C#
 
 ```bash
 https://github.com/antoinebou12/FoodPlannerAPI
+cd src
+docker-compose up --build -d
+# The application will be available at http://localhost:5000. You can browse the recipes, foods, meal plans, inventory, and shopping lists using the navigation menu.
 ```
 
 2. Open the `RecipeFoodPlanner.sln` solution file in Visual Studio 2022 or your preferred IDE.
@@ -50,29 +71,16 @@ dotnet run
 
 ## Project Structure
 
-- `RecipeFoodPlanner.Client`: Client-side Blazor WebAssembly project, containing Razor components for the user interface and services for API communication.
-- `RecipeFoodPlanner.Server`: Server-side ASP.NET Core project, providing the API for the client-side Blazor application.
-- `RecipeFoodPlanner.Server/Controllers`: API controllers for recipes, foods, meal plans, inventory, and shopping lists.
-- `RecipeFoodPlanner.Server/Data`: Data context and repository classes for MongoDB.
-- `RecipeFoodPlanner.Server/Models`: Data models for recipes, foods, meal plans, inventory, and shopping lists.
+- `RecipeMicroservice`: This microservice handles the creation, retrieval, updating, and deletion of recipes.
+- `FoodMicroservice`: This microservice is responsible for managing foods and their nutritional information.
+- `MealPlanMicroservice`: This service manages meal plans containing recipes.
+- `InventoryMicroservice`: This microservice takes care of managing the inventory at home, including food items and their quantities.
+- `ShoppingListMicroservice`: This service is responsible for managing shopping lists with food items and their locations.
+- `APIGateway`: This is the entry point for all client requests. It forwards requests to appropriate microservices.
+- `Tests`: Contains unit tests for each microservice.
 
-- src: This is the root directory where all the source code is stored.
-
-- Application: This contains the application's business logic. It includes configurations, enums, exceptions, extensions, features (like Brands, Dashboards, Documents), interfaces, mappings (for AutoMapper), models, requests and responses, serialization settings, specifications for queries, and validators.
-
-- Client: This contains the client-side code written in Blazor. It includes models, pages (or views), resources, and shared components. This project is responsible for user interface and user interactions.
-
-- Client.Infrastructure: This includes the client-side infrastructure code, like managers that handle business logic, routes for API endpoints, and settings for the application.
-
-- Domain: This includes the domain entities and contracts for the application. Domain entities are plain classes that incorporate both behavior and data format.
-
-- Infrastructure: This includes code related to database configurations, contexts, and repositories. It also contains migrations that are used for database versioning and update, models, resources, services, and specifications.
-
-- Infrastructure.Shared: This shared infrastructure project includes common services that are used across the application.
-
-- Server: This contains server-side code, which is mainly responsible for handling HTTP requests and responses. It includes Controllers, Dockerfile (for containerization), Extensions, Files, Filters, Hubs (for SignalR communication), Localization, Managers, Middlewares, Resources, Services, and Settings.
-
-- Shared: This includes code that is shared between the client and the server. It contains constants, managers, models, settings, and wrappers that are used across the entire solution.
+# Monitoring and Stats
+This application uses Application Insights for monitoring and Prometheus + Grafana for dashboard stats. Health checks are built-in for each microservice and Docker stats can be used for monitoring resource usage.
 
 ## Contributing
 

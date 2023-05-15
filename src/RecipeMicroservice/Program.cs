@@ -2,6 +2,7 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.OpenApi.Models;
 using Pomelo.EntityFrameworkCore.MySql;
 using System;
+using Prometheus;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -12,6 +13,12 @@ builder.Services.AddDbContext<RecipeContext>(options =>
 
 builder.Services.AddControllers();
 builder.Services.AddHealthChecks();
+builder.Services.AddEndpointsApiExplorer();
+builder.Services.AddApplicationInsightsTelemetry();
+builder.Services.AddMetrics();
+
+using var server = new Prometheus.KestrelMetricServer(port: 1234);
+server.Start();
 
 // Configure Swagger
 builder.Services.AddSwaggerGen(options =>
@@ -56,5 +63,11 @@ app.UseAuthorization();
 
 app.MapControllers();
 app.MapHealthChecks("/health");
+
+app.UseMetrics();
+
+Console.WriteLine("Open http://localhost:1234/metrics in a web browser.");
+Console.WriteLine("Press enter to exit.");
+Console.ReadLine();
 
 app.Run();
