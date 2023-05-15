@@ -1,0 +1,45 @@
+@startuml
+!theme blueprint
+
+package "Docker" {
+  [MySQL db] as db
+  [Redis] as redis
+  [Prometheus] as prometheus
+  [Grafana] as grafana
+  [Jaeger] as jaeger
+  [Zookeeper] as zookeeper
+  [Kafka] as kafka
+  
+  frame "Microservices" {
+    [Recipe Microservice] as recipe
+    [Shopping Microservice] as shopping
+    [Meal Plan Microservice] as mealplan
+    [Inventory Microservice] as inventory
+  }
+
+  db -down-> recipe: Connection
+  db -down-> shopping: Connection
+  db -down-> mealplan: Connection
+  db -down-> inventory: Connection
+  
+  prometheus -right-> redis: Monitoring
+  prometheus -up-> recipe: Monitoring
+  prometheus -up-> shopping: Monitoring
+  prometheus -up-> mealplan: Monitoring
+  prometheus -up-> inventory: Monitoring
+
+  grafana -down-> prometheus: Dashboard
+  
+  jaeger -up-> recipe: Tracing
+  jaeger -up-> shopping: Tracing
+  jaeger -up-> mealplan: Tracing
+  jaeger -up-> inventory: Tracing
+
+  zookeeper -right-> kafka: Connection
+
+  kafka -up-> recipe: Messaging
+  kafka -up-> shopping: Messaging
+  kafka -up-> mealplan: Messaging
+  kafka -up-> inventory: Messaging
+}
+@enduml

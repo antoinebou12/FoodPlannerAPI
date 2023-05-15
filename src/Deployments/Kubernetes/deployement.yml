@@ -1,0 +1,37 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: recipemicroservice
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: recipemicroservice
+  template:
+    metadata:
+      labels:
+        app: recipemicroservice
+    spec:
+      containers:
+      - name: recipemicroservice
+        image: recipemicroservice:latest
+        ports:
+        - containerPort: 80
+        env:
+        - name: ConnectionStrings__DefaultConnection
+          valueFrom:
+            secretKeyRef:
+              name: db-creds
+              key: connectionstring
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: recipemicroservice
+spec:
+  selector:
+    app: recipemicroservice
+  ports:
+    - protocol: TCP
+      port: 80
+      targetPort: 80

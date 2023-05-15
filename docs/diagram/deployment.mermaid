@@ -1,0 +1,31 @@
+graph LR
+  db[MySQL] -- ConnectionStrings --> recipemicroservice[Recipe Microservice]
+  db -- ConnectionStrings --> shoppingmicroservice[Shopping Microservice]
+  db -- ConnectionStrings --> mealplanmicroservice[Meal Plan Microservice]
+  db -- ConnectionStrings --> inventorymicroservice[Inventory Microservice]
+  
+  recipemicroservice -- port 5000 --> P1[Port 5000]
+  shoppingmicroservice -- port 5001 --> P2[Port 5001]
+  mealplanmicroservice -- port 5002 --> P3[Port 5002]
+  inventorymicroservice -- port 5003 --> P4[Port 5003]
+  
+  redis[Redis] -- port 6379 --> P5[Port 6379]
+  
+  prometheus[Prometheus] -- port 9090 --> P6[Port 9090]
+  prometheus -- depends on --> redis
+  prometheus -- config file --> V1["/etc/prometheus/prometheus.yml"]
+  
+  grafana[Grafana] -- port 3000 --> P7[Port 3000]
+  grafana -- depends on --> prometheus
+  grafana -- data storage --> V2["/var/lib/grafana"]
+  
+  jaeger[Jaeger] -- various ports --> P8[Ports 16686, 6831, 6832, 5778, 4317, 4318, 14250, 14268, 14269, 9411]
+  
+  zookeeper[Zookeeper] -- port 2181 --> P9[Port 2181]
+  
+  kafka[Kafka] -- port 9092 --> P10[Port 9092]
+  kafka -- depends on --> zookeeper
+  
+  V1[Volumes]
+  V2[Volumes]
+  db -- data storage --> V1

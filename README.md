@@ -69,6 +69,18 @@ dotnet run
 
 6. The application will be available at http://localhost:5000. You can browse the recipes, foods, meal plans, inventory, and shopping lists using the navigation menu.
 
+## API Documentation
+
+The API documentation is available at http://localhost:5000/swagger/index.html.
+
+## Testing
+
+The unit tests for each microservice are located in the `Tests` directory. You can run the tests using the following command:
+
+```bash
+dotnet test
+```
+
 ## Project Structure
 
 - `RecipeMicroservice`: This microservice handles the creation, retrieval, updating, and deletion of recipes.
@@ -91,6 +103,8 @@ Here's a brief overview of the services and their port configurations:
 - jaeger: Distributed tracing service. Exposed on multiple ports including 16686, 6831, 6832, 5778, 4317, 4318, 14250, 14268, 14269, and 9411.
 - zookeeper: Zookeeper service. Exposed on port 2181.
 - kafka: Kafka service. Exposed on port 9092.
+
+[![Deployment](http://www.plantuml.com/plantuml/dpng/XPBDRkem48NtVegvx7a15bT85-cgFv5ewQfL5vDaIDmajcKxLBJYtUlOf4vZGIK4utE-C6VYMHkBslPTo_xOcZg2lEr9QIuiOmgB1Yk2nKOM3Ua5V3A0b-ouUxY7Cdy5DEvda1wfvCQVzL0DqbRBZjm_za5Nuz6R_pNkKQ1tgb0FyYrIHTghRxuSn6Sf6o9rrZ_2ALXtk6_GoyrGESbzzXex5pdZXPQ6z84NP49o7xJWYc1gXjXU3yokbafnKQMKEJk1omXRsBOeKh1pbd9E06_4WOIL-fY2VBGSUMBkgynXMSftiVnxphI2Vr88AYoNugS_fhbCZ34k4h7_364mkJ5OQbxLrk7-TbUGIS7TGwxtZEjLpFqB5TDVv-8CrxauoHHaCExNzyZnoHLiqDIvH5s6aSFIpSPuqbY4dXCxva-197W2p197Wa5SyFZM_N9FByXnGPo_SJ86gz0g-Z7hHIA6JOaqRKHER4sYxBls2m00)
 
 ## Monitoring and Statistics
 
@@ -123,6 +137,8 @@ A variety of metrics are collected to provide a comprehensive view of the system
 - **system_runtime_methods_jitted_count**: The count of methods that have been JIT compiled.
 
 - **system_net_sockets_bytes_received**: The total number of bytes received by sockets.
+
+![Metrics](docs/images/grafana.png)
 
 
 
