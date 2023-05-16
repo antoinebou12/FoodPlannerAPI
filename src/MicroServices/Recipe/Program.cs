@@ -8,6 +8,7 @@ using OpenTelemetry;
 using OpenTelemetry.Resources;
 using OpenTelemetry.Trace;
 using Confluent.Kafka;
+using Recipe.Data;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -17,7 +18,7 @@ builder.Services.AddDbContext<RecipeContext>(options =>
     new MySqlServerVersion(new Version(8, 0, 21))));
 
 builder.Services.AddControllers();
-builder.Services.AddScoped<RecipeSeeder>();
+builder.Services.AddScoped<Recipe.Data.RecipeSeeder>();
 
 builder.Services.AddHealthChecks();
 builder.Services.AddEndpointsApiExplorer();
@@ -26,8 +27,8 @@ builder.Services.AddMetrics();
 
 // Add Kafka Producer
 var producerConfig = new ProducerConfig();
-Configuration.Bind("Producer", producerConfig);
-builder.Services.AddSingleton<ProducerConfig>(producerConfig);
+builder.Configuration.Bind("Producer", producerConfig);
+builder.Services.AddSingleton(producerConfig);
 
 // Add Telemetry
 Sdk.CreateTracerProviderBuilder()
@@ -91,8 +92,12 @@ Console.ReadLine();
 // Seed data
 using (var scope = app.Services.CreateScope())
 {
-    var seeder = scope.ServiceProvider.GetRequiredService<RecipeSeeder>();
-    seeder.SeedData("Data/Recipes.csv").Wait();
+    var seeder = scope.ServiceProvider.GetRequiredService<Recipe.Data.RecipeSeeder>();
+    seeder.SeedData("Data/fixtures/Recipes.csv").Wait();
+    seeder.SeedData("Data/fixtures/Ingredients.csv").Wait();
+    seeder.SeedData("Data/fixtures/Instructions.csv").Wait();
+    seeder.SeedData("Data/fixtures/NutritionInfo.csv").Wait();
+    seeder.SeedData("Data/fixtures/Tags.csv").Wait();
 }
 
 app.Run();
