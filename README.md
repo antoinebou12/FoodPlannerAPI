@@ -17,7 +17,7 @@ This is a Recipe and Food Planner application built using .NET 6 and Docker. The
   - [ ] Create, view, update, and delete meal plans containing recipes.
   - [ ] Create, view, update, and delete shopping lists with food items and their locations.
   - [ ] Manage inventory at home, including food items and their quantities.
-- Next
+- Upcoming
   - [ ] Monitor nutritional information for recipes, foods, and meal plans.
   - [ ] Monitor food item quantities in inventory and shopping lists.
   - [ ] Generate shopping lists based on meal plans and inventory.
@@ -34,7 +34,7 @@ This is a Recipe and Food Planner application built using .NET 6 and Docker. The
   - [X] Metrics
   - [X] Tracing
 - Messaging and Stream Processing
-  - [ ] Kafka Integration
+  - [X] Kafka Integration
   - [ ] Real-Time Data Stream Processing
   - [ ] Message Queuing and Delivery
 - Persistence and Caching
@@ -42,11 +42,11 @@ This is a Recipe and Food Planner application built using .NET 6 and Docker. The
   - [ ] Seeding
   - [X] Data Caching Redis
 - Security and Authorization
-  - Authentication
-  - Role-Based Authorization (RBAC)
-  - Data Encryption (BCRYPT, OAuth2)
+  - [ ] Authentication
+  - [ ] Role-Based Authorization (RBAC)
+  - [ ] Data Encryption (BCRYPT, OAuth2)
 - Performance and Scalability
-  - [ ] Load Balancing
+  - [ ] Load Balancing (K3s)
   - [ ] Auto-Scaling Strategies
   - [ ] Performance Testing
 - DevOps and Deployment
