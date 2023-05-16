@@ -25,7 +25,7 @@ services:
     container_name: recipemicroservice
 
   db:
-    image: mysql:8.0.21
+    image: mysql:8.0.33
     environment:
       - MYSQL_ROOT_PASSWORD=Your_password123
       - MYSQL_DATABASE=recipedb
