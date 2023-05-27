@@ -1,0 +1,7 @@
+/home/antoine/code/antoine/FoodPlannerAPI/src/MicroServices/Shopping/obj/Debug/net6.0/ShoppingMicroservice.csproj.AssemblyReference.cache
+/home/antoine/code/antoine/FoodPlannerAPI/src/MicroServices/Shopping/obj/Debug/net6.0/ShoppingMicroservice.GeneratedMSBuildEditorConfig.editorconfig
+/home/antoine/code/antoine/FoodPlannerAPI/src/MicroServices/Shopping/obj/Debug/net6.0/ShoppingMicroservice.AssemblyInfoInputs.cache
+/home/antoine/code/antoine/FoodPlannerAPI/src/MicroServices/Shopping/obj/Debug/net6.0/ShoppingMicroservice.AssemblyInfo.cs
+/home/antoine/code/antoine/FoodPlannerAPI/src/MicroServices/Shopping/obj/Debug/net6.0/ShoppingMicroservice.csproj.CoreCompileInputs.cache
+/home/antoine/code/antoine/FoodPlannerAPI/src/MicroServices/Shopping/obj/Debug/net6.0/ShoppingMicroservice.MvcApplicationPartsAssemblyInfo.cs
+/home/antoine/code/antoine/FoodPlannerAPI/src/MicroServices/Shopping/obj/Debug/net6.0/ShoppingMicroservice.MvcApplicationPartsAssemblyInfo.cache
