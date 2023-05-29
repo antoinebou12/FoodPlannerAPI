@@ -6,12 +6,20 @@
         "type": "package",
         "compile": {
           "lib/netcoreapp3.1/AWSSDK.Core.dll": {
+<<<<<<< HEAD
             "related": ".pdb;.xml"
+=======
+            "related": ".pdb"
+>>>>>>> origin/main
           }
         },
         "runtime": {
           "lib/netcoreapp3.1/AWSSDK.Core.dll": {
+<<<<<<< HEAD
             "related": ".pdb;.xml"
+=======
+            "related": ".pdb"
+>>>>>>> origin/main
           }
         }
       },
@@ -22,12 +30,20 @@
         },
         "compile": {
           "lib/netcoreapp3.1/AWSSDK.SecurityToken.dll": {
+<<<<<<< HEAD
             "related": ".pdb;.xml"
+=======
+            "related": ".pdb"
+>>>>>>> origin/main
           }
         },
         "runtime": {
           "lib/netcoreapp3.1/AWSSDK.SecurityToken.dll": {
+<<<<<<< HEAD
             "related": ".pdb;.xml"
+=======
+            "related": ".pdb"
+>>>>>>> origin/main
           }
         }
       },
@@ -37,6 +53,7 @@
           "Microsoft.Win32.Registry": "5.0.0"
         },
         "compile": {
+<<<<<<< HEAD
           "lib/net5.0/DnsClient.dll": {
             "related": ".xml"
           }
@@ -45,6 +62,12 @@
           "lib/net5.0/DnsClient.dll": {
             "related": ".xml"
           }
+=======
+          "lib/net5.0/DnsClient.dll": {}
+        },
+        "runtime": {
+          "lib/net5.0/DnsClient.dll": {}
+>>>>>>> origin/main
         }
       },
       "Microsoft.EntityFrameworkCore/7.0.5": {
@@ -57,6 +80,7 @@
           "Microsoft.Extensions.Logging": "7.0.0"
         },
         "compile": {
+<<<<<<< HEAD
           "lib/net6.0/Microsoft.EntityFrameworkCore.dll": {
             "related": ".xml"
           }
@@ -65,6 +89,12 @@
           "lib/net6.0/Microsoft.EntityFrameworkCore.dll": {
             "related": ".xml"
           }
+=======
+          "lib/net6.0/Microsoft.EntityFrameworkCore.dll": {}
+        },
+        "runtime": {
+          "lib/net6.0/Microsoft.EntityFrameworkCore.dll": {}
+>>>>>>> origin/main
         },
         "build": {
           "buildTransitive/net6.0/Microsoft.EntityFrameworkCore.props": {}
@@ -73,6 +103,7 @@
       "Microsoft.EntityFrameworkCore.Abstractions/7.0.5": {
         "type": "package",
         "compile": {
+<<<<<<< HEAD
           "lib/net6.0/Microsoft.EntityFrameworkCore.Abstractions.dll": {
             "related": ".xml"
           }
@@ -81,6 +112,12 @@
           "lib/net6.0/Microsoft.EntityFrameworkCore.Abstractions.dll": {
             "related": ".xml"
           }
+=======
+          "lib/net6.0/Microsoft.EntityFrameworkCore.Abstractions.dll": {}
+        },
+        "runtime": {
+          "lib/net6.0/Microsoft.EntityFrameworkCore.Abstractions.dll": {}
+>>>>>>> origin/main
         }
       },
       "Microsoft.EntityFrameworkCore.Analyzers/7.0.5": {
@@ -99,6 +136,7 @@
           "Microsoft.Extensions.Configuration.Abstractions": "7.0.0"
         },
         "compile": {
+<<<<<<< HEAD
           "lib/net6.0/Microsoft.EntityFrameworkCore.Relational.dll": {
             "related": ".xml"
           }
@@ -107,6 +145,12 @@
           "lib/net6.0/Microsoft.EntityFrameworkCore.Relational.dll": {
             "related": ".xml"
           }
+=======
+          "lib/net6.0/Microsoft.EntityFrameworkCore.Relational.dll": {}
+        },
+        "runtime": {
+          "lib/net6.0/Microsoft.EntityFrameworkCore.Relational.dll": {}
+>>>>>>> origin/main
         }
       },
       "Microsoft.Extensions.ApiDescription.Server/6.0.5": {
@@ -126,6 +170,7 @@
           "Microsoft.Extensions.Primitives": "7.0.0"
         },
         "compile": {
+<<<<<<< HEAD
           "lib/net6.0/Microsoft.Extensions.Caching.Abstractions.dll": {
             "related": ".xml"
           }
@@ -134,6 +179,12 @@
           "lib/net6.0/Microsoft.Extensions.Caching.Abstractions.dll": {
             "related": ".xml"
           }
+=======
+          "lib/net6.0/Microsoft.Extensions.Caching.Abstractions.dll": {}
+        },
+        "runtime": {
+          "lib/net6.0/Microsoft.Extensions.Caching.Abstractions.dll": {}
+>>>>>>> origin/main
         },
         "build": {
           "buildTransitive/net6.0/_._": {}
@@ -149,6 +200,7 @@
           "Microsoft.Extensions.Primitives": "7.0.0"
         },
         "compile": {
+<<<<<<< HEAD
           "lib/net6.0/Microsoft.Extensions.Caching.Memory.dll": {
             "related": ".xml"
           }
@@ -157,6 +209,12 @@
           "lib/net6.0/Microsoft.Extensions.Caching.Memory.dll": {
             "related": ".xml"
           }
+=======
+          "lib/net6.0/Microsoft.Extensions.Caching.Memory.dll": {}
+        },
+        "runtime": {
+          "lib/net6.0/Microsoft.Extensions.Caching.Memory.dll": {}
+>>>>>>> origin/main
         },
         "build": {
           "buildTransitive/net6.0/_._": {}
@@ -168,6 +226,7 @@
           "Microsoft.Extensions.Primitives": "7.0.0"
         },
         "compile": {
+<<<<<<< HEAD
           "lib/net6.0/Microsoft.Extensions.Configuration.Abstractions.dll": {
             "related": ".xml"
           }
@@ -176,6 +235,12 @@
           "lib/net6.0/Microsoft.Extensions.Configuration.Abstractions.dll": {
             "related": ".xml"
           }
+=======
+          "lib/net6.0/Microsoft.Extensions.Configuration.Abstractions.dll": {}
+        },
+        "runtime": {
+          "lib/net6.0/Microsoft.Extensions.Configuration.Abstractions.dll": {}
+>>>>>>> origin/main
         },
         "build": {
           "buildTransitive/net6.0/_._": {}
@@ -187,6 +252,7 @@
           "Microsoft.Extensions.DependencyInjection.Abstractions": "7.0.0"
         },
         "compile": {
+<<<<<<< HEAD
           "lib/net6.0/Microsoft.Extensions.DependencyInjection.dll": {
             "related": ".xml"
           }
@@ -195,6 +261,12 @@
           "lib/net6.0/Microsoft.Extensions.DependencyInjection.dll": {
             "related": ".xml"
           }
+=======
+          "lib/net6.0/Microsoft.Extensions.DependencyInjection.dll": {}
+        },
+        "runtime": {
+          "lib/net6.0/Microsoft.Extensions.DependencyInjection.dll": {}
+>>>>>>> origin/main
         },
         "build": {
           "buildTransitive/net6.0/_._": {}
@@ -203,6 +275,7 @@
       "Microsoft.Extensions.DependencyInjection.Abstractions/7.0.0": {
         "type": "package",
         "compile": {
+<<<<<<< HEAD
           "lib/net6.0/Microsoft.Extensions.DependencyInjection.Abstractions.dll": {
             "related": ".xml"
           }
@@ -211,6 +284,12 @@
           "lib/net6.0/Microsoft.Extensions.DependencyInjection.Abstractions.dll": {
             "related": ".xml"
           }
+=======
+          "lib/net6.0/Microsoft.Extensions.DependencyInjection.Abstractions.dll": {}
+        },
+        "runtime": {
+          "lib/net6.0/Microsoft.Extensions.DependencyInjection.Abstractions.dll": {}
+>>>>>>> origin/main
         },
         "build": {
           "buildTransitive/net6.0/_._": {}
@@ -225,6 +304,7 @@
           "Microsoft.Extensions.Options": "7.0.0"
         },
         "compile": {
+<<<<<<< HEAD
           "lib/net6.0/Microsoft.Extensions.Logging.dll": {
             "related": ".xml"
           }
@@ -233,6 +313,12 @@
           "lib/net6.0/Microsoft.Extensions.Logging.dll": {
             "related": ".xml"
           }
+=======
+          "lib/net6.0/Microsoft.Extensions.Logging.dll": {}
+        },
+        "runtime": {
+          "lib/net6.0/Microsoft.Extensions.Logging.dll": {}
+>>>>>>> origin/main
         },
         "build": {
           "buildTransitive/net6.0/_._": {}
@@ -241,6 +327,7 @@
       "Microsoft.Extensions.Logging.Abstractions/7.0.0": {
         "type": "package",
         "compile": {
+<<<<<<< HEAD
           "lib/net6.0/Microsoft.Extensions.Logging.Abstractions.dll": {
             "related": ".xml"
           }
@@ -249,6 +336,12 @@
           "lib/net6.0/Microsoft.Extensions.Logging.Abstractions.dll": {
             "related": ".xml"
           }
+=======
+          "lib/net6.0/Microsoft.Extensions.Logging.Abstractions.dll": {}
+        },
+        "runtime": {
+          "lib/net6.0/Microsoft.Extensions.Logging.Abstractions.dll": {}
+>>>>>>> origin/main
         },
         "build": {
           "buildTransitive/net6.0/Microsoft.Extensions.Logging.Abstractions.targets": {}
@@ -261,6 +354,7 @@
           "Microsoft.Extensions.Primitives": "7.0.0"
         },
         "compile": {
+<<<<<<< HEAD
           "lib/net6.0/Microsoft.Extensions.Options.dll": {
             "related": ".xml"
           }
@@ -269,6 +363,12 @@
           "lib/net6.0/Microsoft.Extensions.Options.dll": {
             "related": ".xml"
           }
+=======
+          "lib/net6.0/Microsoft.Extensions.Options.dll": {}
+        },
+        "runtime": {
+          "lib/net6.0/Microsoft.Extensions.Options.dll": {}
+>>>>>>> origin/main
         },
         "build": {
           "buildTransitive/net6.0/_._": {}
@@ -280,6 +380,7 @@
           "System.Runtime.CompilerServices.Unsafe": "6.0.0"
         },
         "compile": {
+<<<<<<< HEAD
           "lib/net6.0/Microsoft.Extensions.Primitives.dll": {
             "related": ".xml"
           }
@@ -288,6 +389,12 @@
           "lib/net6.0/Microsoft.Extensions.Primitives.dll": {
             "related": ".xml"
           }
+=======
+          "lib/net6.0/Microsoft.Extensions.Primitives.dll": {}
+        },
+        "runtime": {
+          "lib/net6.0/Microsoft.Extensions.Primitives.dll": {}
+>>>>>>> origin/main
         },
         "build": {
           "buildTransitive/net6.0/_._": {}
@@ -306,12 +413,20 @@
         "type": "package",
         "compile": {
           "lib/netstandard2.0/Microsoft.OpenApi.dll": {
+<<<<<<< HEAD
             "related": ".pdb;.xml"
+=======
+            "related": ".pdb"
+>>>>>>> origin/main
           }
         },
         "runtime": {
           "lib/netstandard2.0/Microsoft.OpenApi.dll": {
+<<<<<<< HEAD
             "related": ".pdb;.xml"
+=======
+            "related": ".pdb"
+>>>>>>> origin/main
           }
         }
       },
@@ -322,6 +437,7 @@
           "System.Security.Principal.Windows": "5.0.0"
         },
         "compile": {
+<<<<<<< HEAD
           "ref/netstandard2.0/Microsoft.Win32.Registry.dll": {
             "related": ".xml"
           }
@@ -330,6 +446,12 @@
           "lib/netstandard2.0/Microsoft.Win32.Registry.dll": {
             "related": ".xml"
           }
+=======
+          "ref/netstandard2.0/Microsoft.Win32.Registry.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Microsoft.Win32.Registry.dll": {}
+>>>>>>> origin/main
         },
         "runtimeTargets": {
           "runtimes/win/lib/netstandard2.0/Microsoft.Win32.Registry.dll": {
@@ -344,6 +466,7 @@
           "System.Runtime.CompilerServices.Unsafe": "5.0.0"
         },
         "compile": {
+<<<<<<< HEAD
           "lib/netstandard2.1/MongoDB.Bson.dll": {
             "related": ".xml"
           }
@@ -352,6 +475,12 @@
           "lib/netstandard2.1/MongoDB.Bson.dll": {
             "related": ".xml"
           }
+=======
+          "lib/netstandard2.1/MongoDB.Bson.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.1/MongoDB.Bson.dll": {}
+>>>>>>> origin/main
         }
       },
       "MongoDB.Driver/2.19.1": {
@@ -363,6 +492,7 @@
           "MongoDB.Libmongocrypt": "1.7.0"
         },
         "compile": {
+<<<<<<< HEAD
           "lib/netstandard2.1/MongoDB.Driver.dll": {
             "related": ".xml"
           }
@@ -371,6 +501,12 @@
           "lib/netstandard2.1/MongoDB.Driver.dll": {
             "related": ".xml"
           }
+=======
+          "lib/netstandard2.1/MongoDB.Driver.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.1/MongoDB.Driver.dll": {}
+>>>>>>> origin/main
         }
       },
       "MongoDB.Driver.Core/2.19.1": {
@@ -387,6 +523,7 @@
           "ZstdSharp.Port": "0.6.2"
         },
         "compile": {
+<<<<<<< HEAD
           "lib/netstandard2.1/MongoDB.Driver.Core.dll": {
             "related": ".xml"
           }
@@ -395,6 +532,12 @@
           "lib/netstandard2.1/MongoDB.Driver.Core.dll": {
             "related": ".xml"
           }
+=======
+          "lib/netstandard2.1/MongoDB.Driver.Core.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.1/MongoDB.Driver.Core.dll": {}
+>>>>>>> origin/main
         }
       },
       "MongoDB.Libmongocrypt/1.7.0": {
@@ -433,6 +576,7 @@
       "MySqlConnector/2.2.5": {
         "type": "package",
         "compile": {
+<<<<<<< HEAD
           "lib/net6.0/MySqlConnector.dll": {
             "related": ".xml"
           }
@@ -441,6 +585,12 @@
           "lib/net6.0/MySqlConnector.dll": {
             "related": ".xml"
           }
+=======
+          "lib/net6.0/MySqlConnector.dll": {}
+        },
+        "runtime": {
+          "lib/net6.0/MySqlConnector.dll": {}
+>>>>>>> origin/main
         }
       },
       "Pomelo.EntityFrameworkCore.MySql/7.0.0": {
@@ -450,6 +600,7 @@
           "MySqlConnector": "2.2.5"
         },
         "compile": {
+<<<<<<< HEAD
           "lib/net6.0/Pomelo.EntityFrameworkCore.MySql.dll": {
             "related": ".xml"
           }
@@ -458,6 +609,12 @@
           "lib/net6.0/Pomelo.EntityFrameworkCore.MySql.dll": {
             "related": ".xml"
           }
+=======
+          "lib/net6.0/Pomelo.EntityFrameworkCore.MySql.dll": {}
+        },
+        "runtime": {
+          "lib/net6.0/Pomelo.EntityFrameworkCore.MySql.dll": {}
+>>>>>>> origin/main
         }
       },
       "SharpCompress/0.30.1": {
@@ -472,6 +629,7 @@
       "Snappier/1.0.0": {
         "type": "package",
         "compile": {
+<<<<<<< HEAD
           "lib/net5.0/Snappier.dll": {
             "related": ".xml"
           }
@@ -480,6 +638,12 @@
           "lib/net5.0/Snappier.dll": {
             "related": ".xml"
           }
+=======
+          "lib/net5.0/Snappier.dll": {}
+        },
+        "runtime": {
+          "lib/net5.0/Snappier.dll": {}
+>>>>>>> origin/main
         }
       },
       "Swashbuckle.AspNetCore/6.5.0": {
@@ -501,12 +665,20 @@
         },
         "compile": {
           "lib/net6.0/Swashbuckle.AspNetCore.Swagger.dll": {
+<<<<<<< HEAD
             "related": ".pdb;.xml"
+=======
+            "related": ".pdb"
+>>>>>>> origin/main
           }
         },
         "runtime": {
           "lib/net6.0/Swashbuckle.AspNetCore.Swagger.dll": {
+<<<<<<< HEAD
             "related": ".pdb;.xml"
+=======
+            "related": ".pdb"
+>>>>>>> origin/main
           }
         },
         "frameworkReferences": [
@@ -520,12 +692,20 @@
         },
         "compile": {
           "lib/net6.0/Swashbuckle.AspNetCore.SwaggerGen.dll": {
+<<<<<<< HEAD
             "related": ".pdb;.xml"
+=======
+            "related": ".pdb"
+>>>>>>> origin/main
           }
         },
         "runtime": {
           "lib/net6.0/Swashbuckle.AspNetCore.SwaggerGen.dll": {
+<<<<<<< HEAD
             "related": ".pdb;.xml"
+=======
+            "related": ".pdb"
+>>>>>>> origin/main
           }
         }
       },
@@ -533,12 +713,20 @@
         "type": "package",
         "compile": {
           "lib/net6.0/Swashbuckle.AspNetCore.SwaggerUI.dll": {
+<<<<<<< HEAD
             "related": ".pdb;.xml"
+=======
+            "related": ".pdb"
+>>>>>>> origin/main
           }
         },
         "runtime": {
           "lib/net6.0/Swashbuckle.AspNetCore.SwaggerUI.dll": {
+<<<<<<< HEAD
             "related": ".pdb;.xml"
+=======
+            "related": ".pdb"
+>>>>>>> origin/main
           }
         },
         "frameworkReferences": [
@@ -557,6 +745,7 @@
       "System.Runtime.CompilerServices.Unsafe/6.0.0": {
         "type": "package",
         "compile": {
+<<<<<<< HEAD
           "lib/net6.0/System.Runtime.CompilerServices.Unsafe.dll": {
             "related": ".xml"
           }
@@ -565,6 +754,12 @@
           "lib/net6.0/System.Runtime.CompilerServices.Unsafe.dll": {
             "related": ".xml"
           }
+=======
+          "lib/net6.0/System.Runtime.CompilerServices.Unsafe.dll": {}
+        },
+        "runtime": {
+          "lib/net6.0/System.Runtime.CompilerServices.Unsafe.dll": {}
+>>>>>>> origin/main
         },
         "build": {
           "buildTransitive/netcoreapp3.1/_._": {}
@@ -577,6 +772,7 @@
           "System.Security.Principal.Windows": "5.0.0"
         },
         "compile": {
+<<<<<<< HEAD
           "ref/netstandard2.0/System.Security.AccessControl.dll": {
             "related": ".xml"
           }
@@ -585,6 +781,12 @@
           "lib/netstandard2.0/System.Security.AccessControl.dll": {
             "related": ".xml"
           }
+=======
+          "ref/netstandard2.0/System.Security.AccessControl.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/System.Security.AccessControl.dll": {}
+>>>>>>> origin/main
         },
         "runtimeTargets": {
           "runtimes/win/lib/netcoreapp2.0/System.Security.AccessControl.dll": {
@@ -596,6 +798,7 @@
       "System.Security.Principal.Windows/5.0.0": {
         "type": "package",
         "compile": {
+<<<<<<< HEAD
           "ref/netcoreapp3.0/System.Security.Principal.Windows.dll": {
             "related": ".xml"
           }
@@ -604,6 +807,12 @@
           "lib/netstandard2.0/System.Security.Principal.Windows.dll": {
             "related": ".xml"
           }
+=======
+          "ref/netcoreapp3.0/System.Security.Principal.Windows.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/System.Security.Principal.Windows.dll": {}
+>>>>>>> origin/main
         },
         "runtimeTargets": {
           "runtimes/unix/lib/netcoreapp2.1/System.Security.Principal.Windows.dll": {
@@ -640,6 +849,7 @@
         "awssdk.core.nuspec",
         "lib/net35/AWSSDK.Core.dll",
         "lib/net35/AWSSDK.Core.pdb",
+<<<<<<< HEAD
         "lib/net35/AWSSDK.Core.xml",
         "lib/net45/AWSSDK.Core.dll",
         "lib/net45/AWSSDK.Core.pdb",
@@ -650,6 +860,14 @@
         "lib/netstandard2.0/AWSSDK.Core.dll",
         "lib/netstandard2.0/AWSSDK.Core.pdb",
         "lib/netstandard2.0/AWSSDK.Core.xml",
+=======
+        "lib/net45/AWSSDK.Core.dll",
+        "lib/net45/AWSSDK.Core.pdb",
+        "lib/netcoreapp3.1/AWSSDK.Core.dll",
+        "lib/netcoreapp3.1/AWSSDK.Core.pdb",
+        "lib/netstandard2.0/AWSSDK.Core.dll",
+        "lib/netstandard2.0/AWSSDK.Core.pdb",
+>>>>>>> origin/main
         "tools/account-management.ps1"
       ]
     },
@@ -666,6 +884,7 @@
         "awssdk.securitytoken.nuspec",
         "lib/net35/AWSSDK.SecurityToken.dll",
         "lib/net35/AWSSDK.SecurityToken.pdb",
+<<<<<<< HEAD
         "lib/net35/AWSSDK.SecurityToken.xml",
         "lib/net45/AWSSDK.SecurityToken.dll",
         "lib/net45/AWSSDK.SecurityToken.pdb",
@@ -676,6 +895,14 @@
         "lib/netstandard2.0/AWSSDK.SecurityToken.dll",
         "lib/netstandard2.0/AWSSDK.SecurityToken.pdb",
         "lib/netstandard2.0/AWSSDK.SecurityToken.xml",
+=======
+        "lib/net45/AWSSDK.SecurityToken.dll",
+        "lib/net45/AWSSDK.SecurityToken.pdb",
+        "lib/netcoreapp3.1/AWSSDK.SecurityToken.dll",
+        "lib/netcoreapp3.1/AWSSDK.SecurityToken.pdb",
+        "lib/netstandard2.0/AWSSDK.SecurityToken.dll",
+        "lib/netstandard2.0/AWSSDK.SecurityToken.pdb",
+>>>>>>> origin/main
         "tools/install.ps1",
         "tools/uninstall.ps1"
       ]
@@ -691,6 +918,7 @@
         "dnsclient.nuspec",
         "icon.png",
         "lib/net45/DnsClient.dll",
+<<<<<<< HEAD
         "lib/net45/DnsClient.xml",
         "lib/net471/DnsClient.dll",
         "lib/net471/DnsClient.xml",
@@ -702,6 +930,13 @@
         "lib/netstandard2.0/DnsClient.xml",
         "lib/netstandard2.1/DnsClient.dll",
         "lib/netstandard2.1/DnsClient.xml"
+=======
+        "lib/net471/DnsClient.dll",
+        "lib/net5.0/DnsClient.dll",
+        "lib/netstandard1.3/DnsClient.dll",
+        "lib/netstandard2.0/DnsClient.dll",
+        "lib/netstandard2.1/DnsClient.dll"
+>>>>>>> origin/main
       ]
     },
     "Microsoft.EntityFrameworkCore/7.0.5": {
@@ -714,7 +949,10 @@
         "Icon.png",
         "buildTransitive/net6.0/Microsoft.EntityFrameworkCore.props",
         "lib/net6.0/Microsoft.EntityFrameworkCore.dll",
+<<<<<<< HEAD
         "lib/net6.0/Microsoft.EntityFrameworkCore.xml",
+=======
+>>>>>>> origin/main
         "microsoft.entityframeworkcore.7.0.5.nupkg.sha512",
         "microsoft.entityframeworkcore.nuspec"
       ]
@@ -728,7 +966,10 @@
         ".signature.p7s",
         "Icon.png",
         "lib/net6.0/Microsoft.EntityFrameworkCore.Abstractions.dll",
+<<<<<<< HEAD
         "lib/net6.0/Microsoft.EntityFrameworkCore.Abstractions.xml",
+=======
+>>>>>>> origin/main
         "microsoft.entityframeworkcore.abstractions.7.0.5.nupkg.sha512",
         "microsoft.entityframeworkcore.abstractions.nuspec"
       ]
@@ -756,7 +997,10 @@
         ".signature.p7s",
         "Icon.png",
         "lib/net6.0/Microsoft.EntityFrameworkCore.Relational.dll",
+<<<<<<< HEAD
         "lib/net6.0/Microsoft.EntityFrameworkCore.Relational.xml",
+=======
+>>>>>>> origin/main
         "microsoft.entityframeworkcore.relational.7.0.2.nupkg.sha512",
         "microsoft.entityframeworkcore.relational.nuspec"
       ]
@@ -1007,6 +1251,7 @@
         "buildTransitive/net6.0/_._",
         "buildTransitive/netcoreapp2.0/Microsoft.Extensions.Caching.Abstractions.targets",
         "lib/net462/Microsoft.Extensions.Caching.Abstractions.dll",
+<<<<<<< HEAD
         "lib/net462/Microsoft.Extensions.Caching.Abstractions.xml",
         "lib/net6.0/Microsoft.Extensions.Caching.Abstractions.dll",
         "lib/net6.0/Microsoft.Extensions.Caching.Abstractions.xml",
@@ -1014,6 +1259,11 @@
         "lib/net7.0/Microsoft.Extensions.Caching.Abstractions.xml",
         "lib/netstandard2.0/Microsoft.Extensions.Caching.Abstractions.dll",
         "lib/netstandard2.0/Microsoft.Extensions.Caching.Abstractions.xml",
+=======
+        "lib/net6.0/Microsoft.Extensions.Caching.Abstractions.dll",
+        "lib/net7.0/Microsoft.Extensions.Caching.Abstractions.dll",
+        "lib/netstandard2.0/Microsoft.Extensions.Caching.Abstractions.dll",
+>>>>>>> origin/main
         "microsoft.extensions.caching.abstractions.7.0.0.nupkg.sha512",
         "microsoft.extensions.caching.abstractions.nuspec",
         "useSharedDesignerContext.txt"
@@ -1034,6 +1284,7 @@
         "buildTransitive/net6.0/_._",
         "buildTransitive/netcoreapp2.0/Microsoft.Extensions.Caching.Memory.targets",
         "lib/net462/Microsoft.Extensions.Caching.Memory.dll",
+<<<<<<< HEAD
         "lib/net462/Microsoft.Extensions.Caching.Memory.xml",
         "lib/net6.0/Microsoft.Extensions.Caching.Memory.dll",
         "lib/net6.0/Microsoft.Extensions.Caching.Memory.xml",
@@ -1041,6 +1292,11 @@
         "lib/net7.0/Microsoft.Extensions.Caching.Memory.xml",
         "lib/netstandard2.0/Microsoft.Extensions.Caching.Memory.dll",
         "lib/netstandard2.0/Microsoft.Extensions.Caching.Memory.xml",
+=======
+        "lib/net6.0/Microsoft.Extensions.Caching.Memory.dll",
+        "lib/net7.0/Microsoft.Extensions.Caching.Memory.dll",
+        "lib/netstandard2.0/Microsoft.Extensions.Caching.Memory.dll",
+>>>>>>> origin/main
         "microsoft.extensions.caching.memory.7.0.0.nupkg.sha512",
         "microsoft.extensions.caching.memory.nuspec",
         "useSharedDesignerContext.txt"
@@ -1061,6 +1317,7 @@
         "buildTransitive/net6.0/_._",
         "buildTransitive/netcoreapp2.0/Microsoft.Extensions.Configuration.Abstractions.targets",
         "lib/net462/Microsoft.Extensions.Configuration.Abstractions.dll",
+<<<<<<< HEAD
         "lib/net462/Microsoft.Extensions.Configuration.Abstractions.xml",
         "lib/net6.0/Microsoft.Extensions.Configuration.Abstractions.dll",
         "lib/net6.0/Microsoft.Extensions.Configuration.Abstractions.xml",
@@ -1068,6 +1325,11 @@
         "lib/net7.0/Microsoft.Extensions.Configuration.Abstractions.xml",
         "lib/netstandard2.0/Microsoft.Extensions.Configuration.Abstractions.dll",
         "lib/netstandard2.0/Microsoft.Extensions.Configuration.Abstractions.xml",
+=======
+        "lib/net6.0/Microsoft.Extensions.Configuration.Abstractions.dll",
+        "lib/net7.0/Microsoft.Extensions.Configuration.Abstractions.dll",
+        "lib/netstandard2.0/Microsoft.Extensions.Configuration.Abstractions.dll",
+>>>>>>> origin/main
         "microsoft.extensions.configuration.abstractions.7.0.0.nupkg.sha512",
         "microsoft.extensions.configuration.abstractions.nuspec",
         "useSharedDesignerContext.txt"
@@ -1088,6 +1350,7 @@
         "buildTransitive/net6.0/_._",
         "buildTransitive/netcoreapp2.0/Microsoft.Extensions.DependencyInjection.targets",
         "lib/net462/Microsoft.Extensions.DependencyInjection.dll",
+<<<<<<< HEAD
         "lib/net462/Microsoft.Extensions.DependencyInjection.xml",
         "lib/net6.0/Microsoft.Extensions.DependencyInjection.dll",
         "lib/net6.0/Microsoft.Extensions.DependencyInjection.xml",
@@ -1097,6 +1360,12 @@
         "lib/netstandard2.0/Microsoft.Extensions.DependencyInjection.xml",
         "lib/netstandard2.1/Microsoft.Extensions.DependencyInjection.dll",
         "lib/netstandard2.1/Microsoft.Extensions.DependencyInjection.xml",
+=======
+        "lib/net6.0/Microsoft.Extensions.DependencyInjection.dll",
+        "lib/net7.0/Microsoft.Extensions.DependencyInjection.dll",
+        "lib/netstandard2.0/Microsoft.Extensions.DependencyInjection.dll",
+        "lib/netstandard2.1/Microsoft.Extensions.DependencyInjection.dll",
+>>>>>>> origin/main
         "microsoft.extensions.dependencyinjection.7.0.0.nupkg.sha512",
         "microsoft.extensions.dependencyinjection.nuspec",
         "useSharedDesignerContext.txt"
@@ -1117,6 +1386,7 @@
         "buildTransitive/net6.0/_._",
         "buildTransitive/netcoreapp2.0/Microsoft.Extensions.DependencyInjection.Abstractions.targets",
         "lib/net462/Microsoft.Extensions.DependencyInjection.Abstractions.dll",
+<<<<<<< HEAD
         "lib/net462/Microsoft.Extensions.DependencyInjection.Abstractions.xml",
         "lib/net6.0/Microsoft.Extensions.DependencyInjection.Abstractions.dll",
         "lib/net6.0/Microsoft.Extensions.DependencyInjection.Abstractions.xml",
@@ -1126,6 +1396,12 @@
         "lib/netstandard2.0/Microsoft.Extensions.DependencyInjection.Abstractions.xml",
         "lib/netstandard2.1/Microsoft.Extensions.DependencyInjection.Abstractions.dll",
         "lib/netstandard2.1/Microsoft.Extensions.DependencyInjection.Abstractions.xml",
+=======
+        "lib/net6.0/Microsoft.Extensions.DependencyInjection.Abstractions.dll",
+        "lib/net7.0/Microsoft.Extensions.DependencyInjection.Abstractions.dll",
+        "lib/netstandard2.0/Microsoft.Extensions.DependencyInjection.Abstractions.dll",
+        "lib/netstandard2.1/Microsoft.Extensions.DependencyInjection.Abstractions.dll",
+>>>>>>> origin/main
         "microsoft.extensions.dependencyinjection.abstractions.7.0.0.nupkg.sha512",
         "microsoft.extensions.dependencyinjection.abstractions.nuspec",
         "useSharedDesignerContext.txt"
@@ -1146,6 +1422,7 @@
         "buildTransitive/net6.0/_._",
         "buildTransitive/netcoreapp2.0/Microsoft.Extensions.Logging.targets",
         "lib/net462/Microsoft.Extensions.Logging.dll",
+<<<<<<< HEAD
         "lib/net462/Microsoft.Extensions.Logging.xml",
         "lib/net6.0/Microsoft.Extensions.Logging.dll",
         "lib/net6.0/Microsoft.Extensions.Logging.xml",
@@ -1155,6 +1432,12 @@
         "lib/netstandard2.0/Microsoft.Extensions.Logging.xml",
         "lib/netstandard2.1/Microsoft.Extensions.Logging.dll",
         "lib/netstandard2.1/Microsoft.Extensions.Logging.xml",
+=======
+        "lib/net6.0/Microsoft.Extensions.Logging.dll",
+        "lib/net7.0/Microsoft.Extensions.Logging.dll",
+        "lib/netstandard2.0/Microsoft.Extensions.Logging.dll",
+        "lib/netstandard2.1/Microsoft.Extensions.Logging.dll",
+>>>>>>> origin/main
         "microsoft.extensions.logging.7.0.0.nupkg.sha512",
         "microsoft.extensions.logging.nuspec",
         "useSharedDesignerContext.txt"
@@ -1218,6 +1501,7 @@
         "buildTransitive/netcoreapp2.0/Microsoft.Extensions.Logging.Abstractions.targets",
         "buildTransitive/netstandard2.0/Microsoft.Extensions.Logging.Abstractions.targets",
         "lib/net462/Microsoft.Extensions.Logging.Abstractions.dll",
+<<<<<<< HEAD
         "lib/net462/Microsoft.Extensions.Logging.Abstractions.xml",
         "lib/net6.0/Microsoft.Extensions.Logging.Abstractions.dll",
         "lib/net6.0/Microsoft.Extensions.Logging.Abstractions.xml",
@@ -1225,6 +1509,11 @@
         "lib/net7.0/Microsoft.Extensions.Logging.Abstractions.xml",
         "lib/netstandard2.0/Microsoft.Extensions.Logging.Abstractions.dll",
         "lib/netstandard2.0/Microsoft.Extensions.Logging.Abstractions.xml",
+=======
+        "lib/net6.0/Microsoft.Extensions.Logging.Abstractions.dll",
+        "lib/net7.0/Microsoft.Extensions.Logging.Abstractions.dll",
+        "lib/netstandard2.0/Microsoft.Extensions.Logging.Abstractions.dll",
+>>>>>>> origin/main
         "microsoft.extensions.logging.abstractions.7.0.0.nupkg.sha512",
         "microsoft.extensions.logging.abstractions.nuspec",
         "useSharedDesignerContext.txt"
@@ -1245,6 +1534,7 @@
         "buildTransitive/net6.0/_._",
         "buildTransitive/netcoreapp2.0/Microsoft.Extensions.Options.targets",
         "lib/net462/Microsoft.Extensions.Options.dll",
+<<<<<<< HEAD
         "lib/net462/Microsoft.Extensions.Options.xml",
         "lib/net6.0/Microsoft.Extensions.Options.dll",
         "lib/net6.0/Microsoft.Extensions.Options.xml",
@@ -1254,6 +1544,12 @@
         "lib/netstandard2.0/Microsoft.Extensions.Options.xml",
         "lib/netstandard2.1/Microsoft.Extensions.Options.dll",
         "lib/netstandard2.1/Microsoft.Extensions.Options.xml",
+=======
+        "lib/net6.0/Microsoft.Extensions.Options.dll",
+        "lib/net7.0/Microsoft.Extensions.Options.dll",
+        "lib/netstandard2.0/Microsoft.Extensions.Options.dll",
+        "lib/netstandard2.1/Microsoft.Extensions.Options.dll",
+>>>>>>> origin/main
         "microsoft.extensions.options.7.0.0.nupkg.sha512",
         "microsoft.extensions.options.nuspec",
         "useSharedDesignerContext.txt"
@@ -1274,6 +1570,7 @@
         "buildTransitive/net6.0/_._",
         "buildTransitive/netcoreapp2.0/Microsoft.Extensions.Primitives.targets",
         "lib/net462/Microsoft.Extensions.Primitives.dll",
+<<<<<<< HEAD
         "lib/net462/Microsoft.Extensions.Primitives.xml",
         "lib/net6.0/Microsoft.Extensions.Primitives.dll",
         "lib/net6.0/Microsoft.Extensions.Primitives.xml",
@@ -1281,6 +1578,11 @@
         "lib/net7.0/Microsoft.Extensions.Primitives.xml",
         "lib/netstandard2.0/Microsoft.Extensions.Primitives.dll",
         "lib/netstandard2.0/Microsoft.Extensions.Primitives.xml",
+=======
+        "lib/net6.0/Microsoft.Extensions.Primitives.dll",
+        "lib/net7.0/Microsoft.Extensions.Primitives.dll",
+        "lib/netstandard2.0/Microsoft.Extensions.Primitives.dll",
+>>>>>>> origin/main
         "microsoft.extensions.primitives.7.0.0.nupkg.sha512",
         "microsoft.extensions.primitives.nuspec",
         "useSharedDesignerContext.txt"
@@ -1313,10 +1615,15 @@
         ".signature.p7s",
         "lib/net46/Microsoft.OpenApi.dll",
         "lib/net46/Microsoft.OpenApi.pdb",
+<<<<<<< HEAD
         "lib/net46/Microsoft.OpenApi.xml",
         "lib/netstandard2.0/Microsoft.OpenApi.dll",
         "lib/netstandard2.0/Microsoft.OpenApi.pdb",
         "lib/netstandard2.0/Microsoft.OpenApi.xml",
+=======
+        "lib/netstandard2.0/Microsoft.OpenApi.dll",
+        "lib/netstandard2.0/Microsoft.OpenApi.pdb",
+>>>>>>> origin/main
         "microsoft.openapi.1.2.3.nupkg.sha512",
         "microsoft.openapi.nuspec"
       ]
@@ -1333,14 +1640,20 @@
         "THIRD-PARTY-NOTICES.TXT",
         "lib/net46/Microsoft.Win32.Registry.dll",
         "lib/net461/Microsoft.Win32.Registry.dll",
+<<<<<<< HEAD
         "lib/net461/Microsoft.Win32.Registry.xml",
         "lib/netstandard1.3/Microsoft.Win32.Registry.dll",
         "lib/netstandard2.0/Microsoft.Win32.Registry.dll",
         "lib/netstandard2.0/Microsoft.Win32.Registry.xml",
+=======
+        "lib/netstandard1.3/Microsoft.Win32.Registry.dll",
+        "lib/netstandard2.0/Microsoft.Win32.Registry.dll",
+>>>>>>> origin/main
         "microsoft.win32.registry.5.0.0.nupkg.sha512",
         "microsoft.win32.registry.nuspec",
         "ref/net46/Microsoft.Win32.Registry.dll",
         "ref/net461/Microsoft.Win32.Registry.dll",
+<<<<<<< HEAD
         "ref/net461/Microsoft.Win32.Registry.xml",
         "ref/netstandard1.3/Microsoft.Win32.Registry.dll",
         "ref/netstandard1.3/Microsoft.Win32.Registry.xml",
@@ -1355,6 +1668,10 @@
         "ref/netstandard1.3/zh-hant/Microsoft.Win32.Registry.xml",
         "ref/netstandard2.0/Microsoft.Win32.Registry.dll",
         "ref/netstandard2.0/Microsoft.Win32.Registry.xml",
+=======
+        "ref/netstandard1.3/Microsoft.Win32.Registry.dll",
+        "ref/netstandard2.0/Microsoft.Win32.Registry.dll",
+>>>>>>> origin/main
         "runtimes/win/lib/net46/Microsoft.Win32.Registry.dll",
         "runtimes/win/lib/net461/Microsoft.Win32.Registry.dll",
         "runtimes/win/lib/net461/Microsoft.Win32.Registry.xml",
@@ -1374,11 +1691,16 @@
         ".signature.p7s",
         "License.txt",
         "lib/net472/MongoDB.Bson.dll",
+<<<<<<< HEAD
         "lib/net472/MongoDB.Bson.xml",
         "lib/netstandard2.0/MongoDB.Bson.dll",
         "lib/netstandard2.0/MongoDB.Bson.xml",
         "lib/netstandard2.1/MongoDB.Bson.dll",
         "lib/netstandard2.1/MongoDB.Bson.xml",
+=======
+        "lib/netstandard2.0/MongoDB.Bson.dll",
+        "lib/netstandard2.1/MongoDB.Bson.dll",
+>>>>>>> origin/main
         "mongodb.bson.2.19.1.nupkg.sha512",
         "mongodb.bson.nuspec",
         "packageIcon.png"
@@ -1393,11 +1715,16 @@
         ".signature.p7s",
         "License.txt",
         "lib/net472/MongoDB.Driver.dll",
+<<<<<<< HEAD
         "lib/net472/MongoDB.Driver.xml",
         "lib/netstandard2.0/MongoDB.Driver.dll",
         "lib/netstandard2.0/MongoDB.Driver.xml",
         "lib/netstandard2.1/MongoDB.Driver.dll",
         "lib/netstandard2.1/MongoDB.Driver.xml",
+=======
+        "lib/netstandard2.0/MongoDB.Driver.dll",
+        "lib/netstandard2.1/MongoDB.Driver.dll",
+>>>>>>> origin/main
         "mongodb.driver.2.19.1.nupkg.sha512",
         "mongodb.driver.nuspec",
         "packageIcon.png"
@@ -1413,11 +1740,16 @@
         "License.txt",
         "THIRD-PARTY-NOTICES",
         "lib/net472/MongoDB.Driver.Core.dll",
+<<<<<<< HEAD
         "lib/net472/MongoDB.Driver.Core.xml",
         "lib/netstandard2.0/MongoDB.Driver.Core.dll",
         "lib/netstandard2.0/MongoDB.Driver.Core.xml",
         "lib/netstandard2.1/MongoDB.Driver.Core.dll",
         "lib/netstandard2.1/MongoDB.Driver.Core.xml",
+=======
+        "lib/netstandard2.0/MongoDB.Driver.Core.dll",
+        "lib/netstandard2.1/MongoDB.Driver.Core.dll",
+>>>>>>> origin/main
         "mongodb.driver.core.2.19.1.nupkg.sha512",
         "mongodb.driver.core.nuspec",
         "packageIcon.png"
@@ -1463,6 +1795,7 @@
         ".signature.p7s",
         "README.md",
         "lib/net461/MySqlConnector.dll",
+<<<<<<< HEAD
         "lib/net461/MySqlConnector.xml",
         "lib/net471/MySqlConnector.dll",
         "lib/net471/MySqlConnector.xml",
@@ -1476,6 +1809,14 @@
         "lib/netstandard2.0/MySqlConnector.xml",
         "lib/netstandard2.1/MySqlConnector.dll",
         "lib/netstandard2.1/MySqlConnector.xml",
+=======
+        "lib/net471/MySqlConnector.dll",
+        "lib/net6.0/MySqlConnector.dll",
+        "lib/net7.0/MySqlConnector.dll",
+        "lib/netcoreapp3.1/MySqlConnector.dll",
+        "lib/netstandard2.0/MySqlConnector.dll",
+        "lib/netstandard2.1/MySqlConnector.dll",
+>>>>>>> origin/main
         "logo.png",
         "mysqlconnector.2.2.5.nupkg.sha512",
         "mysqlconnector.nuspec"
@@ -1491,9 +1832,13 @@
         "README.md",
         "icon.png",
         "lib/net6.0/Pomelo.EntityFrameworkCore.MySql.dll",
+<<<<<<< HEAD
         "lib/net6.0/Pomelo.EntityFrameworkCore.MySql.xml",
         "lib/net7.0/Pomelo.EntityFrameworkCore.MySql.dll",
         "lib/net7.0/Pomelo.EntityFrameworkCore.MySql.xml",
+=======
+        "lib/net7.0/Pomelo.EntityFrameworkCore.MySql.dll",
+>>>>>>> origin/main
         "pomelo.entityframeworkcore.mysql.7.0.0.nupkg.sha512",
         "pomelo.entityframeworkcore.mysql.nuspec"
       ]
@@ -1523,6 +1868,7 @@
         ".signature.p7s",
         "COPYING.txt",
         "lib/net5.0/Snappier.dll",
+<<<<<<< HEAD
         "lib/net5.0/Snappier.xml",
         "lib/netcoreapp3.0/Snappier.dll",
         "lib/netcoreapp3.0/Snappier.xml",
@@ -1530,6 +1876,11 @@
         "lib/netstandard2.0/Snappier.xml",
         "lib/netstandard2.1/Snappier.dll",
         "lib/netstandard2.1/Snappier.xml",
+=======
+        "lib/netcoreapp3.0/Snappier.dll",
+        "lib/netstandard2.0/Snappier.dll",
+        "lib/netstandard2.1/Snappier.dll",
+>>>>>>> origin/main
         "snappier.1.0.0.nupkg.sha512",
         "snappier.nuspec"
       ]
@@ -1555,6 +1906,7 @@
         ".signature.p7s",
         "lib/net5.0/Swashbuckle.AspNetCore.Swagger.dll",
         "lib/net5.0/Swashbuckle.AspNetCore.Swagger.pdb",
+<<<<<<< HEAD
         "lib/net5.0/Swashbuckle.AspNetCore.Swagger.xml",
         "lib/net6.0/Swashbuckle.AspNetCore.Swagger.dll",
         "lib/net6.0/Swashbuckle.AspNetCore.Swagger.pdb",
@@ -1568,6 +1920,16 @@
         "lib/netstandard2.0/Swashbuckle.AspNetCore.Swagger.dll",
         "lib/netstandard2.0/Swashbuckle.AspNetCore.Swagger.pdb",
         "lib/netstandard2.0/Swashbuckle.AspNetCore.Swagger.xml",
+=======
+        "lib/net6.0/Swashbuckle.AspNetCore.Swagger.dll",
+        "lib/net6.0/Swashbuckle.AspNetCore.Swagger.pdb",
+        "lib/net7.0/Swashbuckle.AspNetCore.Swagger.dll",
+        "lib/net7.0/Swashbuckle.AspNetCore.Swagger.pdb",
+        "lib/netcoreapp3.0/Swashbuckle.AspNetCore.Swagger.dll",
+        "lib/netcoreapp3.0/Swashbuckle.AspNetCore.Swagger.pdb",
+        "lib/netstandard2.0/Swashbuckle.AspNetCore.Swagger.dll",
+        "lib/netstandard2.0/Swashbuckle.AspNetCore.Swagger.pdb",
+>>>>>>> origin/main
         "swashbuckle.aspnetcore.swagger.6.5.0.nupkg.sha512",
         "swashbuckle.aspnetcore.swagger.nuspec"
       ]
@@ -1581,6 +1943,7 @@
         ".signature.p7s",
         "lib/net5.0/Swashbuckle.AspNetCore.SwaggerGen.dll",
         "lib/net5.0/Swashbuckle.AspNetCore.SwaggerGen.pdb",
+<<<<<<< HEAD
         "lib/net5.0/Swashbuckle.AspNetCore.SwaggerGen.xml",
         "lib/net6.0/Swashbuckle.AspNetCore.SwaggerGen.dll",
         "lib/net6.0/Swashbuckle.AspNetCore.SwaggerGen.pdb",
@@ -1594,6 +1957,16 @@
         "lib/netstandard2.0/Swashbuckle.AspNetCore.SwaggerGen.dll",
         "lib/netstandard2.0/Swashbuckle.AspNetCore.SwaggerGen.pdb",
         "lib/netstandard2.0/Swashbuckle.AspNetCore.SwaggerGen.xml",
+=======
+        "lib/net6.0/Swashbuckle.AspNetCore.SwaggerGen.dll",
+        "lib/net6.0/Swashbuckle.AspNetCore.SwaggerGen.pdb",
+        "lib/net7.0/Swashbuckle.AspNetCore.SwaggerGen.dll",
+        "lib/net7.0/Swashbuckle.AspNetCore.SwaggerGen.pdb",
+        "lib/netcoreapp3.0/Swashbuckle.AspNetCore.SwaggerGen.dll",
+        "lib/netcoreapp3.0/Swashbuckle.AspNetCore.SwaggerGen.pdb",
+        "lib/netstandard2.0/Swashbuckle.AspNetCore.SwaggerGen.dll",
+        "lib/netstandard2.0/Swashbuckle.AspNetCore.SwaggerGen.pdb",
+>>>>>>> origin/main
         "swashbuckle.aspnetcore.swaggergen.6.5.0.nupkg.sha512",
         "swashbuckle.aspnetcore.swaggergen.nuspec"
       ]
@@ -1607,6 +1980,7 @@
         ".signature.p7s",
         "lib/net5.0/Swashbuckle.AspNetCore.SwaggerUI.dll",
         "lib/net5.0/Swashbuckle.AspNetCore.SwaggerUI.pdb",
+<<<<<<< HEAD
         "lib/net5.0/Swashbuckle.AspNetCore.SwaggerUI.xml",
         "lib/net6.0/Swashbuckle.AspNetCore.SwaggerUI.dll",
         "lib/net6.0/Swashbuckle.AspNetCore.SwaggerUI.pdb",
@@ -1620,6 +1994,16 @@
         "lib/netstandard2.0/Swashbuckle.AspNetCore.SwaggerUI.dll",
         "lib/netstandard2.0/Swashbuckle.AspNetCore.SwaggerUI.pdb",
         "lib/netstandard2.0/Swashbuckle.AspNetCore.SwaggerUI.xml",
+=======
+        "lib/net6.0/Swashbuckle.AspNetCore.SwaggerUI.dll",
+        "lib/net6.0/Swashbuckle.AspNetCore.SwaggerUI.pdb",
+        "lib/net7.0/Swashbuckle.AspNetCore.SwaggerUI.dll",
+        "lib/net7.0/Swashbuckle.AspNetCore.SwaggerUI.pdb",
+        "lib/netcoreapp3.0/Swashbuckle.AspNetCore.SwaggerUI.dll",
+        "lib/netcoreapp3.0/Swashbuckle.AspNetCore.SwaggerUI.pdb",
+        "lib/netstandard2.0/Swashbuckle.AspNetCore.SwaggerUI.dll",
+        "lib/netstandard2.0/Swashbuckle.AspNetCore.SwaggerUI.pdb",
+>>>>>>> origin/main
         "swashbuckle.aspnetcore.swaggerui.6.5.0.nupkg.sha512",
         "swashbuckle.aspnetcore.swaggerui.nuspec"
       ]
@@ -1634,6 +2018,7 @@
         "LICENSE.TXT",
         "THIRD-PARTY-NOTICES.TXT",
         "lib/net461/System.Buffers.dll",
+<<<<<<< HEAD
         "lib/net461/System.Buffers.xml",
         "lib/netcoreapp2.0/_._",
         "lib/netstandard1.1/System.Buffers.dll",
@@ -1648,6 +2033,16 @@
         "ref/netstandard1.1/System.Buffers.xml",
         "ref/netstandard2.0/System.Buffers.dll",
         "ref/netstandard2.0/System.Buffers.xml",
+=======
+        "lib/netcoreapp2.0/_._",
+        "lib/netstandard1.1/System.Buffers.dll",
+        "lib/netstandard2.0/System.Buffers.dll",
+        "lib/uap10.0.16299/_._",
+        "ref/net45/System.Buffers.dll",
+        "ref/netcoreapp2.0/_._",
+        "ref/netstandard1.1/System.Buffers.dll",
+        "ref/netstandard2.0/System.Buffers.dll",
+>>>>>>> origin/main
         "ref/uap10.0.16299/_._",
         "system.buffers.4.5.1.nupkg.sha512",
         "system.buffers.nuspec",
@@ -1668,6 +2063,7 @@
         "buildTransitive/netcoreapp2.0/System.Runtime.CompilerServices.Unsafe.targets",
         "buildTransitive/netcoreapp3.1/_._",
         "lib/net461/System.Runtime.CompilerServices.Unsafe.dll",
+<<<<<<< HEAD
         "lib/net461/System.Runtime.CompilerServices.Unsafe.xml",
         "lib/net6.0/System.Runtime.CompilerServices.Unsafe.dll",
         "lib/net6.0/System.Runtime.CompilerServices.Unsafe.xml",
@@ -1675,6 +2071,11 @@
         "lib/netcoreapp3.1/System.Runtime.CompilerServices.Unsafe.xml",
         "lib/netstandard2.0/System.Runtime.CompilerServices.Unsafe.dll",
         "lib/netstandard2.0/System.Runtime.CompilerServices.Unsafe.xml",
+=======
+        "lib/net6.0/System.Runtime.CompilerServices.Unsafe.dll",
+        "lib/netcoreapp3.1/System.Runtime.CompilerServices.Unsafe.dll",
+        "lib/netstandard2.0/System.Runtime.CompilerServices.Unsafe.dll",
+>>>>>>> origin/main
         "system.runtime.compilerservices.unsafe.6.0.0.nupkg.sha512",
         "system.runtime.compilerservices.unsafe.nuspec",
         "useSharedDesignerContext.txt"
@@ -1692,6 +2093,7 @@
         "THIRD-PARTY-NOTICES.TXT",
         "lib/net46/System.Security.AccessControl.dll",
         "lib/net461/System.Security.AccessControl.dll",
+<<<<<<< HEAD
         "lib/net461/System.Security.AccessControl.xml",
         "lib/netstandard1.3/System.Security.AccessControl.dll",
         "lib/netstandard2.0/System.Security.AccessControl.dll",
@@ -1713,6 +2115,15 @@
         "ref/netstandard1.3/zh-hant/System.Security.AccessControl.xml",
         "ref/netstandard2.0/System.Security.AccessControl.dll",
         "ref/netstandard2.0/System.Security.AccessControl.xml",
+=======
+        "lib/netstandard1.3/System.Security.AccessControl.dll",
+        "lib/netstandard2.0/System.Security.AccessControl.dll",
+        "lib/uap10.0.16299/_._",
+        "ref/net46/System.Security.AccessControl.dll",
+        "ref/net461/System.Security.AccessControl.dll",
+        "ref/netstandard1.3/System.Security.AccessControl.dll",
+        "ref/netstandard2.0/System.Security.AccessControl.dll",
+>>>>>>> origin/main
         "ref/uap10.0.16299/_._",
         "runtimes/win/lib/net46/System.Security.AccessControl.dll",
         "runtimes/win/lib/net461/System.Security.AccessControl.dll",
@@ -1739,6 +2150,7 @@
         "THIRD-PARTY-NOTICES.TXT",
         "lib/net46/System.Security.Principal.Windows.dll",
         "lib/net461/System.Security.Principal.Windows.dll",
+<<<<<<< HEAD
         "lib/net461/System.Security.Principal.Windows.xml",
         "lib/netstandard1.3/System.Security.Principal.Windows.dll",
         "lib/netstandard2.0/System.Security.Principal.Windows.dll",
@@ -1762,6 +2174,16 @@
         "ref/netstandard1.3/zh-hant/System.Security.Principal.Windows.xml",
         "ref/netstandard2.0/System.Security.Principal.Windows.dll",
         "ref/netstandard2.0/System.Security.Principal.Windows.xml",
+=======
+        "lib/netstandard1.3/System.Security.Principal.Windows.dll",
+        "lib/netstandard2.0/System.Security.Principal.Windows.dll",
+        "lib/uap10.0.16299/_._",
+        "ref/net46/System.Security.Principal.Windows.dll",
+        "ref/net461/System.Security.Principal.Windows.dll",
+        "ref/netcoreapp3.0/System.Security.Principal.Windows.dll",
+        "ref/netstandard1.3/System.Security.Principal.Windows.dll",
+        "ref/netstandard2.0/System.Security.Principal.Windows.dll",
+>>>>>>> origin/main
         "ref/uap10.0.16299/_._",
         "runtimes/unix/lib/netcoreapp2.0/System.Security.Principal.Windows.dll",
         "runtimes/unix/lib/netcoreapp2.0/System.Security.Principal.Windows.xml",
@@ -1809,11 +2231,16 @@
     ]
   },
   "packageFolders": {
+<<<<<<< HEAD
     "/home/antoine/.nuget/packages/": {}
+=======
+    "/root/.nuget/packages/": {}
+>>>>>>> origin/main
   },
   "project": {
     "version": "1.0.0",
     "restore": {
+<<<<<<< HEAD
       "projectUniqueName": "/home/antoine/code/antoine/FoodPlannerAPI/src/MicroServices/Shopping/ShoppingMicroservice.csproj",
       "projectName": "ShoppingMicroservice",
       "projectPath": "/home/antoine/code/antoine/FoodPlannerAPI/src/MicroServices/Shopping/ShoppingMicroservice.csproj",
@@ -1822,6 +2249,16 @@
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/home/antoine/.nuget/NuGet/NuGet.Config"
+=======
+      "projectUniqueName": "/workspaces/FoodPlannerAPI/src/MicroServices/Shopping/ShoppingMicroservice.csproj",
+      "projectName": "ShoppingMicroservice",
+      "projectPath": "/workspaces/FoodPlannerAPI/src/MicroServices/Shopping/ShoppingMicroservice.csproj",
+      "packagesPath": "/root/.nuget/packages/",
+      "outputPath": "/workspaces/FoodPlannerAPI/src/MicroServices/Shopping/obj/",
+      "projectStyle": "PackageReference",
+      "configFilePaths": [
+        "/root/.nuget/NuGet/NuGet.Config"
+>>>>>>> origin/main
       ],
       "originalTargetFrameworks": [
         "net6.0"
@@ -1881,7 +2318,11 @@
             "privateAssets": "all"
           }
         },
+<<<<<<< HEAD
         "runtimeIdentifierGraphPath": "/home/antoine/.dotnet/sdk/7.0.203/RuntimeIdentifierGraph.json"
+=======
+        "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/6.0.408/RuntimeIdentifierGraph.json"
+>>>>>>> origin/main
       }
     }
   }

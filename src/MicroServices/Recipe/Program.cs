@@ -1,16 +1,14 @@
 using Microsoft.EntityFrameworkCore;
 using Microsoft.OpenApi.Models;
 using Pomelo.EntityFrameworkCore.MySql;
-using System;
 using Prometheus;
 using App.Metrics;
-using App.Metrics.AspNetCore;
 using Microsoft.Extensions.Caching.StackExchangeRedis;
 using OpenTelemetry;
 using OpenTelemetry.Resources;
 using OpenTelemetry.Trace;
-using OpenTelemetry.Exporter;
-using OpenTelemetry.Instrumentation;
+using Confluent.Kafka;
+using Recipe.Data;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -20,13 +18,19 @@ builder.Services.AddDbContext<RecipeContext>(options =>
     new MySqlServerVersion(new Version(8, 0, 21))));
 
 builder.Services.AddControllers();
-builder.Services.AddScoped<RecipeSeeder>();
+builder.Services.AddScoped<Recipe.Data.RecipeSeeder>();
 
 builder.Services.AddHealthChecks();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddApplicationInsightsTelemetry();
 builder.Services.AddMetrics();
 
+// Add Kafka Producer
+var producerConfig = new ProducerConfig();
+builder.Configuration.Bind("Producer", producerConfig);
+builder.Services.AddSingleton(producerConfig);
+
+// Add Telemetry
 Sdk.CreateTracerProviderBuilder()
     .AddSource("RecipeMicroservice")
     .AddAspNetCoreInstrumentation()
@@ -39,39 +43,22 @@ Sdk.CreateTracerProviderBuilder()
     .SetResourceBuilder(ResourceBuilder.CreateDefault().AddService("RecipeMicroservice"))
     .Build();
 
-
-using var server = new MetricServer(port: 1234);
-server.Start();
-
 // Add Redis
 builder.Services.AddStackExchangeRedisCache(options =>
 {
-    options.Configuration = "localhost"; // Replace with your Redis connection string
+    options.Configuration = "localhost";
     options.InstanceName = "RecipeMicroservice_";
 });
 
 builder.Services.AddDistributedMemoryCache();
 
 // Configure Swagger
-builder.Services.AddSwaggerGen(options =>
+builder.Services.AddSwaggerGen(c =>
 {
-    options.SwaggerDoc("v1", new OpenApiInfo
-    {
-        Version = "v1",
-        Title = "Recipe Microservice API",
-        Description = "A Microservice for Managing Recipes",
-        TermsOfService = new Uri("https://github.com/antoinebou12/foodplannerapi/blob/main/LICENSE"),
-        Contact = new OpenApiContact
-        {
-            Name = "Antoine Boucher",
-            Email = "antoine.boucher012@gmail.com",
-            Url = new Uri("https://antoineboucher.info"),
-        },
-        License = new OpenApiLicense
-        {
-            Name = "Use under MIT",
-            Url = new Uri("https://github.com/antoinebou12/foodplannerapi/blob/main/LICENSE")
-        }
+    c.SwaggerDoc("v1", new OpenApiInfo 
+    { 
+        Title = "Recipe Microservice API", 
+        Version = "v1" 
     });
 });
 
@@ -111,8 +98,8 @@ app.Use(async (context, next) =>
 
 // app.UseMetrics();
 
-app.Run();
-
 Console.WriteLine("Open http://localhost:1234/metrics in a web browser.");
 Console.WriteLine("Press enter to exit.");
 Console.ReadLine();
+
+app.Run();

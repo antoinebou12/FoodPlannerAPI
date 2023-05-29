@@ -1,6 +1,7 @@
 {
   "format": 1,
   "restore": {
+<<<<<<< HEAD
     "/home/antoine/code/antoine/FoodPlannerAPI/src/MicroServices/Recipe/RecipeMicroservice.csproj": {}
   },
   "projects": {
@@ -15,6 +16,22 @@
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/home/antoine/.nuget/NuGet/NuGet.Config"
+=======
+    "/workspaces/FoodPlannerAPI/src/MicroServices/Recipe/RecipeMicroservice.csproj": {}
+  },
+  "projects": {
+    "/workspaces/FoodPlannerAPI/src/MicroServices/Recipe/RecipeMicroservice.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/workspaces/FoodPlannerAPI/src/MicroServices/Recipe/RecipeMicroservice.csproj",
+        "projectName": "RecipeMicroservice",
+        "projectPath": "/workspaces/FoodPlannerAPI/src/MicroServices/Recipe/RecipeMicroservice.csproj",
+        "packagesPath": "/root/.nuget/packages/",
+        "outputPath": "/workspaces/FoodPlannerAPI/src/MicroServices/Recipe/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/root/.nuget/NuGet/NuGet.Config"
+>>>>>>> origin/main
         ],
         "originalTargetFrameworks": [
           "net6.0"
@@ -42,10 +59,28 @@
               "target": "Package",
               "version": "[4.3.0, )"
             },
+<<<<<<< HEAD
+=======
+            "Azure.Extensions.AspNetCore.Configuration.Secrets": {
+              "target": "Package",
+              "version": "[1.2.2, )"
+            },
+            "Confluent.Kafka": {
+              "target": "Package",
+              "version": "[2.1.1, )"
+            },
+>>>>>>> origin/main
             "CsvHelper": {
               "target": "Package",
               "version": "[30.0.1, )"
             },
+<<<<<<< HEAD
+=======
+            "DotNetEnv": {
+              "target": "Package",
+              "version": "[2.5.0, )"
+            },
+>>>>>>> origin/main
             "Microsoft.ApplicationInsights.AspNetCore": {
               "target": "Package",
               "version": "[2.21.0, )"
@@ -126,7 +161,11 @@
               "privateAssets": "all"
             }
           },
+<<<<<<< HEAD
           "runtimeIdentifierGraphPath": "/home/antoine/.dotnet/sdk/7.0.203/RuntimeIdentifierGraph.json"
+=======
+          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/6.0.408/RuntimeIdentifierGraph.json"
+>>>>>>> origin/main
         }
       }
     }

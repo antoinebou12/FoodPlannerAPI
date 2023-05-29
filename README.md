@@ -11,27 +11,53 @@ This is a Recipe and Food Planner application built using .NET 6 and Docker. The
 
 ## Features
 
-- [ ] Create, view, update, and delete recipes with detailed instructions and nutritional information.
-- [ ] Create, view, update, and delete foods with nutritional information.
-- [ ] Create, view, update, and delete meal plans containing recipes.
-- [ ] Manage inventory at home, including food items and their quantities.
-- [ ] Create, view, update, and delete shopping lists with food items and their locations.
-- [ ] Monitor nutritional information for recipes, foods, and meal plans.
-- [ ] Monitor food item quantities in inventory and shopping lists.
-- [ ] Generate shopping lists based on meal plans and inventory.
-- [ ] Generate meal plans based on inventory and shopping lists.
-- [ ] Generate meal plans based on nutritional goals.
-- [ ] Generate shopping lists based on nutritional goals.
-- [ ] Generate meal plans based on food preferences.
-- [ ] Generate shopping lists based on food preferences.
-- [ ] Generate meal plans based on food allergies.
-- [ ] Generate shopping lists based on food allergies.
-
+- Developpement
+  - [X] Create, view, update, and delete recipes with detailed instructions and nutritional information.
+  - [X] Create, view, update, and delete foods with nutritional information.
+  - [ ] Create, view, update, and delete meal plans containing recipes.
+  - [ ] Create, view, update, and delete shopping lists with food items and their locations.
+  - [ ] Manage inventory at home, including food items and their quantities.
+- Upcoming
+  - [ ] Monitor nutritional information for recipes, foods, and meal plans.
+  - [ ] Monitor food item quantities in inventory and shopping lists.
+  - [ ] Generate shopping lists based on meal plans and inventory.
+  - [ ] Generate meal plans based on inventory and shopping lists.
+  - [ ] Generate meal plans based on nutritional goals.
+  - [ ] Generate shopping lists based on nutritional goals.
+  - [ ] Generate meal plans based on food preferences.
+  - [ ] Generate shopping lists based on food preferences.
+  - [ ] Generate meal plans based on food allergies.
+  - [ ] Generate shopping lists based on food allergies.
 - Monitoring Microservices
-  - [ ] Logging
-  - [ ] Health Checks
-  - [ ] Metrics
-  - [ ] Tracing
+  - [X] Logging
+  - [X] Health Checks
+  - [X] Metrics
+  - [X] Tracing
+- Messaging and Stream Processing
+  - [X] Kafka Integration
+  - [ ] Real-Time Data Stream Processing
+  - [ ] Message Queuing and Delivery
+- Persistence and Caching
+  - [ ] Database Management and Migration
+  - [ ] Seeding
+  - [X] Data Caching Redis
+- Security and Authorization
+  - [ ] Authentication
+  - [ ] Role-Based Authorization (RBAC)
+  - [ ] Data Encryption (BCRYPT, OAuth2)
+- Performance and Scalability
+  - [ ] Load Balancing (K3s)
+  - [ ] Auto-Scaling Strategies
+  - [ ] Performance Testing
+- DevOps and Deployment
+  - [ ] Dockerization and Containerization
+  - [X] CI Pipeline Setup
+  - [ ] CD Pipeline Setup
+  - [ ] Monitoring and Logging in Production
+- Other Microservices Features
+  - [ ] Service Discovery
+  - [ ] API Gateway Integration
+  - [ ] Circuit Breaker Implementation for Fault Tolerance
 
 
 ## Prerequisites

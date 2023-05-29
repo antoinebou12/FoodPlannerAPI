@@ -1,41 +1,43 @@
-using System.ComponentModel.DataAnnotations;
+using System.Collections.Generic;
+using System.IO;
+using System.Linq;
+using System.Threading.Tasks;
 using CsvHelper;
+using Microsoft.EntityFrameworkCore;
 using System.Globalization;
 
-public class RecipeSeeder
+namespace Recipe.Data
 {
-    private readonly RecipeContext _context;
-
-    public RecipeSeeder(RecipeContext context)
+    public class RecipeSeeder
     {
-        _context = context;
-    }
+        private readonly RecipeContext _context;
 
-    public async Task SeedData(string path)
-    {
-        using var reader = new StreamReader(path);
-        using var csv = new CsvReader(reader, CultureInfo.InvariantCulture);
-
-        var records = csv.GetRecords<Recipe>().ToList();
-
-        foreach (var record in records)
+        public RecipeSeeder(RecipeContext context)
         {
-            _context.Recipes.Add(record);
+            _context = context;
         }
 
-        await _context.SaveChangesAsync();
-    }
-
-    private void ImportFromCsv(string path)
-    {
-        using var reader = new StreamReader(path);
-        using var csv = new CsvReader(reader, CultureInfo.InvariantCulture);
-
-        var records = csv.GetRecords<Recipe>().ToList();
-
-        foreach (var record in records)
+        // Main seeding method
+        public async Task SeedData(string recipePath, string ingredientPath, string instructionPath, string nutritionInfoPath, string tagPath)
         {
-            _context.Recipes.Add(record);
+            await ImportFromCsv<Recipe>(recipePath, csv => csv.GetRecords<Recipe>());
+            await ImportFromCsv<Ingredient>(ingredientPath, csv => csv.GetRecords<Ingredient>());
+            await ImportFromCsv<Instruction>(instructionPath, csv => csv.GetRecords<Instruction>());
+            await ImportFromCsv<NutritionInfo>(nutritionInfoPath, csv => csv.GetRecords<NutritionInfo>());
+            await ImportFromCsv<Tag>(tagPath, csv => csv.GetRecords<Tag>());
+
+            await _context.SaveChangesAsync();
+        }
+
+        // Helper method to import data from CSV files
+        private async Task ImportFromCsv<T>(string path, Func<CsvReader, IEnumerable<T>> getRecords) where T : class
+        {
+            using var reader = new StreamReader(path);
+            using var csv = new CsvReader(reader, CultureInfo.InvariantCulture);
+
+            var records = getRecords(csv).ToList();
+
+            await _context.Set<T>().AddRangeAsync(records);
         }
     }
 }
