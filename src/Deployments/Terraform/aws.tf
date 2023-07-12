@@ -37,7 +37,7 @@ provider "kubernetes" {
   cluster_ca_certificate = base64decode(module.eks.cluster_certificate_authority_data)
   token                  = module.eks.kubeconfig.token
   load_config_file       = false
-  version                = "~> 2.20.0"
+  version                = "~> 2.22.0"
 }
 
 resource "kubernetes_namespace" "recipemicroservice" {
